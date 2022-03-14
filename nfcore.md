@@ -8,3 +8,6 @@ https://www.nextflow.io/docs/latest/getstarted.html#installation
 
 ./nextflow: line 322: /bin/java: No such file or directory
 https://www.java.com/en/download/
+
+
+sudo mv nextflow /usr/local/bin/
