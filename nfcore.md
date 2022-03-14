@@ -11,3 +11,7 @@ https://www.java.com/en/download/
 
 
 sudo mv nextflow /usr/local/bin/
+
+nf-core create
+
+mv nf-core-revcomp lab-revcomp
