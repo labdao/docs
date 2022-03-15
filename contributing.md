@@ -15,74 +15,48 @@ Please note we have a code of conduct, please follow it in all your interactions
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
    do not have permission to do that, you may request the second reviewer to merge it for you.
 
-## Code of Conduct
+## Code of Conduct at LabDAO
 
 ### Our Pledge
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone.
+In the interest of fostering an open, collaborative, and welcoming environment, we pledge to making participation in our LabDAO projects and community a welcoming experience for everyone.
 
-### Our Standards
+### We care 😊
 
-Examples of behavior that contributes to creating a positive environment
-include:
+nf-core's CoC and expectations of respectful behaviours for all participants (including organisers and the nf-core team) include but are not limited to the following (listed in alphabetical order):
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+- Ask for consent before sharing another community member’s personal information (including photographs) on social media.
+- Be respectful of differing viewpoints and experiences. We are all here to learn from one another and a difference in opinion can present a good learning opportunity.
+- Celebrate your accomplishments at events! (Get creative with your use of emojis 🎉 🥳 💯 🙌 !)
+- Focus on what is best for the team and the community. (When in doubt, ask)
+- Graciously accept constructive criticism, yet be unafraid to question, deliberate, and learn.
+- Introduce yourself to members of the community. (We’ve all been outsiders and we know that talking to strangers can be hard for some, but remember we’re interested in getting to know you and your visions for open tools!)
+- Show appreciation and **provide clear feedback**. (This is especially important because we don’t see each other in person and it can be harder to interpret subtleties. Also remember that not everyone understands a certain language to the same extent as you do, so **be clear in your communications to be kind.**)
+- Take breaks when you feel like you need them.
 
-Examples of unacceptable behavior by participants include:
+### We frown on 😕
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
-advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
-  address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+The following behaviours from any participants within the nf-core community (including the organisers) will be considered unacceptable under this code of conduct. Engaging or advocating for any of the following could result in expulsion from nf-core workspaces.
 
-### Our Responsibilities
+- “Doxing” i.e. posting (or threatening to post) another person’s personal identifying information online.
+- Spamming or trolling of individuals on social media.
+- Use of sexual or discriminatory imagery, comments, or jokes and unwelcome sexual attention.
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+### Procedures for Reporting CoC violations
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+If someone makes you feel uncomfortable through their behaviours or actions, report it as soon as possible. You can reach out to members of the [LabDAO core team](https://discord.gg/labdao) and they will forward your concerns. Issues directly concerning members of the core team will be dealt with by other members of the core team and possible conflicts of interest will be taken into account. You can also contact the core team via e-mail at dao (at) labdao (dot) com.
 
-### Scope
+All reports will be handled with utmost discretion and confidentially.
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+## Attribution and Acknowledgements
 
-### Enforcement
+- The [nf-core Code of Conduct](https://nf-co.re/code_of_conduct)
+- The [Contributor Covenant, version 1.4](http://contributor-covenant.org/version/1/4)
+- The [OpenCon 2017 Code of Conduct](http://www.opencon2017.org/code_of_conduct) (CC BY 4.0 OpenCon organisers, SPARC and Right to Research Coalition)
+- The [eLife innovation sprint 2020 Code of Conduct](https://sprint.elifesciences.org/code-of-conduct/)
+- The [Mozilla Community Participation Guidelines v3.1](https://www.mozilla.org/en-US/about/governance/policies/participation/) (version 3.1, CC BY-SA 3.0 Mozilla)
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at dao@labdao.com. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+## Changelog
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
-
-### Attribution
-
-This Code of Conduct is modified and adapted from the Contributor Covenant, version 1.4,
-available at [http://contributor-covenant.org/version/1/4][version]
-
-[homepage]: http://contributor-covenant.org
-[version]: http://contributor-covenant.org/version/1/4/
+### v1.0 - March 15th, 2022
+- Simplification and heavy adaption of [nf-core Code of Conduct](https://nf-co.re/code_of_conduct)
