@@ -12,14 +12,14 @@ Please note we have a code of conduct, please follow it in all your interactions
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 
 ## Community Charter
-Open tools and services are a public good. To maintain the free exchange of tools and services we strive to make our community adhere to the following articles: 
-* The LabDAO community has a clear definition of membership. All owners of $LAB tokens are LabDAO members. 
+Open scientific tools and services are a public good. To maintain the free exchange of tools and services we strive to make our community adhere to the following articles: 
+* The LabDAO community has a clear definition of membership. All owners of $LAB tokens are LabDAO members. Tokens are earned by contributing to the maintanance of open source tools, the LabDAO community or by using services on the openlab exchange. (Note: no token exists, the project is pre-launch)
 * The governance decisions made within LabDAO are binding for its members.
-* The members of LabDAO are shape the governance process.
+* The members of LabDAO shape the governance process.
 * The governance decisions made within LabDAO are enforced by the community or accountable delegates.
 * The violation of governance decisions is followed by graduated sanctions.
 * Conflicts within the community should be resolved within it using low costs.
-* The growth of LabDAO will lead to the emergence of multiple nested daughter organisations
+* The growth of LabDAO will lead to the emergence of multiple nested daughter organisations, facilitated using the openlab teams framework.
 
 ## Code of Conduct at LabDAO
 
