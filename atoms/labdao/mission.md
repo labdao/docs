@@ -1,3 +1,5 @@
+<img width="570" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/misk/labdao_progress.png">
+
 # Mission
 LabDAO is on a mission to accelerate progress in the life sciences by developing open tools and making them globally accessible. We are coming together to build a community-owned and operated exchange of wet-lab and dry-lab laboratory services.
 
