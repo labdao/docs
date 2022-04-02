@@ -35,6 +35,9 @@ The LabDAO will ensure the quality of services exchanged within its community us
 2. Participants on the openlab exchange need to stake $LAB tokens proportional to the value of transactions that they are offering and consuming. In case of fraudulent behaviour, the staked $LAB tokens can be slased by the community. 
 3. The community is maintaing a list of trusted service providers that are participating in the exchange. The on-chain transaction record serves as a basis for user experience ratings.
 
+<img width="1070" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/docs/openlabmap.png">
+
+
 The long term goals of LabDAO can be broken down into three stages: 
 1. the introduction of the openlab marketplace will reduce the hurdles of using biomedical tools - with an initial focus on computational biology. 
 2. the growth in transactions and rise in potential conflicts around service specifications will lead to the emergence of community-generated standards for biological services.
