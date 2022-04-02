@@ -49,9 +49,9 @@ The long term goals of LabDAO can be broken down into three stages:
 * [How could openlab look like?](https://mirror.xyz/niklasrindtorff.eth/JvXLoD_boXYMo6JQGPlpSzZLWBCupHgy6NvVUab0apw)
 * [A Knowledge Graph for biological experiments](https://niklasrindtorff.substack.com/p/building-a-knowledge-graph-for-biological)
 
-Presentation on [LabDAO](https://t.co/kZbjQjT46G) at ETHDenver
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s3t4NxP-pFk?start=2136" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[![Presentation on [LabDAO](https://t.co/kZbjQjT46G) at ETHDenver](https://img.youtube.com/vi/s3t4NxP-pFk/0.jpg)](https://www.youtube.com/embed/s3t4NxP-pFk?start=2136)
 
 Podcast episode with [VitaDAO](https://www.youtube.com/watch?v=qBrPbiIpxMQ&ab_channel=VitaDAO)
 
