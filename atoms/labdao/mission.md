@@ -17,7 +17,7 @@ While platforms like Amazon Web Service remove the barrier to execute code by mo
 ## The Solution
 To accelerate progress, LabDAO develops tools, such as openlab, to enable scientists to share their specialized tools and services with eachother. Instead of going through a lengthy search for collaborators or contract research organizations (CROs), scientists can exchange services on a global marketplace. Openlab enables every biotech scientist, grad student, post-doc and professor to become an independent inventor or entrepreneur. 
 
-Payments on openlab can be both in the form of shared IP (co-ownership is the new co-authorship) or tokens. Openlab enables the shift from a centralized market with opaque CROs and siloed research institutes towards an open peer-to-peer market for laboratory services. The majority of fees generated on the exchange flow back into open source development of life science tools within the ecosystem.
+Payments on openlab can be both in the form of shared IP (co-ownership is the new co-authorship) or other tokens. Openlab enables the shift from a centralized market with opaque CROs and siloed research institutes towards an open peer-to-peer market for laboratory services. The majority of fees generated on the exchange flow back into open source development of life science tools within the ecosystem.
 
 The openlab protocol and its community, LabDAO, address the above stated problems in biomedicine: 
 * by creating an open market for execution of biomedical experiments between experimental designers and executors 
@@ -29,7 +29,7 @@ Amazon Web Services lowered the required activation energy to start a new tech c
 Decentralized cloud labs address these limitations by offering a diversity of laboratory services on a permissionless protocol. Market dynamics offer fast feedback and incentivize the right level of abstraction for service controls. DAO and token mechanism enable this marketplace to be owned by the community using it. 
 
 The LabDAO will ensure the quality of services exchanged within its community using three mechanisms: 
-1. Funds paid for transactions will be held in escrow until the user has reviewed the results coming from a purchased service. In case of conflict, an arbitration service can be called upon for settlement.
+1. Funds paid for transactions will be held in escrow until the user has reviewed the results coming from a purchased service. In case of conflict, an independent arbitration service can be called upon for settlement.
 2. Participants on the openlab exchange need to stake $LAB tokens proportional to the value of transactions that they are offering and consuming. In case of fraudulent behaviour, the staked $LAB tokens can be slased by the community. 
 3. The community is maintaing a list of trusted service providers that are participating in the exchange. The on-chain transaction record serves as a basis for user experience ratings.
 
