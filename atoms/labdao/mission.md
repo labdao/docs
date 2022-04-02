@@ -3,7 +3,7 @@
 # Mission
 LabDAO is on a mission to accelerate progress in the life sciences by developing open tools and making them globally accessible. We are coming together to build a community-owned and operated exchange of wet-lab and dry-lab laboratory services.
 
-We want to live in a world in which the ability to unleash one's potential to develop technology is not bounded by limited access to funding, hardware and distribution channels. The tools we are building together are designed to lower the barriers for biotech entrepreneurs and life scientists to raise funding, to develop technologies and to share them in a permissionless way. Put differently, we want to live in a world in which students can drop out of school because they developed a therapeutic candidate from their laptop.
+We want to live in a world in which the ability to unleash one's potential to develop technology is not bounded by limited access to funding, hardware and distribution channels. The tools we are building together are designed to lower the barriers for inventors to raise funding, to develop technologies and to share them in a permissionless way. Put differently, we want to live in a world in which students can drop out of school because they developed a therapeutic candidate from their laptop.
 
 ## The Problem
 Open source code has accelerated progress in information technology over the last 20 years. This success is enabled by the ability to share instructions (code) at low cost and to reproduce results with high reliability. In addition, the sharing of code is accelerated by technology market dynamics in which intellectual property is less relevant than time to market and trade secrets around implementation.
