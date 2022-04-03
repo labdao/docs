@@ -14,18 +14,45 @@ As a part of submitting their job instructions via the openlab REST API, the cli
 Finally, the client deposits a previously communicated amount of tokens into the openlab escrow contract and thereby opens an openlab transaction on the ethereum virtual machine. To open the a transaction, the client references the JSON object with the job instructions that was previously exposed on IPFS.
 
 ### closing a transaction
-All provider of a particular service within the community receive the job instructions sent by the client. If the provider has capacity to process a service, it checks that the client has made a deposit of the agreed upon number of tokens into the escrow contract. If the job instructions pass all checks and funds are available in the contract, a provider can claim the transaction. Transactions are claimed on a first-come first-served basis.  
+All providers of a particular service within the community receive the job instructions sent by the client (in the alpha version of the protocol clients need to specify their providers). If the provider has capacity to process a service, it checks that the client has made a deposit of the agreed upon number of tokens into the escrow contract. If the job instructions pass all checks and funds are available in the contract, a provider can claim the transaction. Transactions are claimed on a first-come first-served basis.  
 
 Once a transaction is claimed by a provider, it begins to process the requested job. The processing of jobs, just like the instruction templates, is standardized by LabDAO. In case of computational services, LabDAO develops standardized containers or adopts widely-accepted standards, such as nf-core. After processing the job, all output data is pinned to IPFS. The provider now mints a non-fungible token (NFT) referencing the generated data and the initial instructions.
 
 Finally, after generating the NFT, the token is transferred to the client on-chain and funds are claimed from the escrow. A fixed fee of the released funds flows into the LabDAO community treasury to support further development of this open source project. 
 
 ## Value exchange using the openlab contracts
+The openlab contracts are transferring value on-chain and create a shared truth about the state of submitted jobs. There are three core functions within the alpha version of openlab exchange: 
+
+* submitJob - this function is used by the client. It requires a client address, a provider address, the amount and kind of ERC20 tokens to be paid as well as the jobURI. The *jobURI* is the IPFS URI of the JSON object containing the job instruction.
+* acceptJob - this function is used by the provider to accept a submitted job. 
+* closeJob - this function is used by the provider. It requires a *tokenURI*, the IPFS URI pointing to an NFT containing all data and metadata generated during the job. In the process of calling closeJob, the NFT is minted, transferred to the client and payments are released from escrow with a fee flowing into the community treasury.
+
+The state of a job can be changed with these and other functions as illustrated below.
+
+<img width="1070" alt="openlab_state" src="https://github.com/labdao/assets/blob/main/docs/state_transition.png">
 
 ## Data exchange using decentralized storage and NFTs
+Data is uploaded and downloaded from IPFS easiest using the openlab command-line-interface. 
 
+**Please note that all files managed using the openlab protocol are currently not encrypted and visible around the globe**
+
+The key functions include: 
+```
+openlab file push example_upload.csv
+openlab file pull example_download.csv
+```
+Before starting a new transaction, clients need to make sure to have all the required data pinned to IPFS for decentralized processing.
 
 ## Instruction exchange using the openlab REST API standard
+Every transaction is initiated with a job instruction being broadcasted to all provider gateways.
+Before a job instruction is submitted, clients can list all available services on the openlab exchage, pull example forms for their service of interest and retrieve information about potential providers.
+
+The key functions include: 
+```
+openlab app list 
+openlab job submit
+openlab job status
+```
 
 ## Can I try it? 
 Soon.
