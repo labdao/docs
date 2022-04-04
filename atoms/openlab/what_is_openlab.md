@@ -4,7 +4,7 @@ Openlab is an exchange protocol allowing members within the LabDAO community to 
 ## What are the key steps of openlab?
 Openlab can be divided into three elements, a data exchange layer, an instruction exchange layer and a value exchange layer. Consumers (Clients) and Providers (also reffered to as Servers) communicate with each other using all three layers. 
 
-<img width="1070" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/openlab/Group%203.png">
+<img width="1070" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/openlab_exchange/Group%203.png">
 
 ### opening a transaction
 Clients use the openlab command-line-interface or the openlab website to define their requested laboratory service using a standard form defined by the community and served through a REST API. The job instructions are sent to a LabDAO-hosted index service which relays the request to a series of gateways, run by trusted providers within the community. In the future, multiple permissionless index services will be available. 
@@ -29,7 +29,7 @@ The openlab contracts are transferring value on-chain and create a shared truth 
 
 The state of a job can be changed with these and other functions as illustrated below.
 
-<img width="1070" alt="openlab_state" src="https://github.com/labdao/assets/blob/main/openlab/state_transition.png">
+<img width="1070" alt="openlab_state" src="https://github.com/labdao/assets/blob/main/openlab_exchange/state_transition.png">
 
 ## Data exchange using decentralized storage and NFTs
 Data is uploaded and downloaded from IPFS easiest using the openlab command-line-interface. 
