@@ -8,7 +8,7 @@ We've established some conventions around writing documentation that make it eas
 * All documentation should live in a folder named `docs/` in the root of your repository.
 * When making references between documentation files, [use relative paths](https://docusaurus.io/docs/docs-markdown-features#referencing-other-documents).
 * Each Markdown page should have a [front matter](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs#markdown-front-matter) section at the beginning, which at minimum should define the document's `title` and `description`.
-* Any documents that you want to reference repeatedly throughout your documentation, but do not want to be standalone pages, should be in `docs/_partials/`.
+* Any documents that you want to reference repeatedly throughout your documentation, but do not want to be standalone pages, should be in `_partials/` folders. You can have as many of these folders as you want, scattered throughout your `docs/` directory, but they all should be named `_partials/`.
 
 To add your repository's documentation to `docs.labdao.com`, make a pull request adding your repository as a Git submodule inside of this repository's `docs/` folder.
 

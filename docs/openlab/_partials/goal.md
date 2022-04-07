@@ -5,6 +5,6 @@ Today, two openlab products are in development:
 * **openlab exchange**
 * **openlab teams** 
 
-<img width="1070" alt="labdao_products" src="https://github.com/labdao/assets/blob/main/docs/labdao-products.png">
+![labdao products](https://github.com/labdao/assets/blob/main/openlab_exchange/labdao-products.png?raw=true)
 
 New members within LabDAO are encouraged to -over time- form a team with community members that share the same interests and/or skills. Teams can work together to develop services and share them with the overall LabDAO community through the openlab exchange. Besides contributing open tools, teams can also come together to research new intellectual property which can lead to new organizations to emerge. The openlab teams product can facilitate the emergence of these inventor teams. 
