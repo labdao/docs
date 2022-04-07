@@ -2,6 +2,7 @@
 title: What is LabDAO?
 description: LabDAO is a global online community of scientists and engineers that come together to develop and share open tools for life science research.
 sidebar_position: 1
+slug: /
 ---
 
 # What is LabDAO?
