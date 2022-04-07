@@ -1,4 +1,10 @@
-![labdao progress](https://github.com/labdao/assets/blob/main/social/Twitter_Banner.png?raw=true)
+---
+title: Mission
+description: LabDAO's mission is to accelerate progress in the life sciences by developing open tools and making them globally accessible.
+sidebar_position: 2
+---
+
+![labdao_progress](https://github.com/labdao/assets/blob/main/social/Twitter_Banner.png?raw=true)
 
 # Mission
 LabDAO is on a mission to accelerate progress in the life sciences by developing open tools and making them globally accessible. We are coming together to build a community-owned and operated exchange of wet-lab and dry-lab laboratory services.

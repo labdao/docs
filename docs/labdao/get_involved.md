@@ -1,3 +1,9 @@
+---
+title: Get Involved
+description: There are many ways to get involved within LabDAO.
+sidebar_position: 3
+---
+
 # Get involved
 There are multiple ways to get involved within LabDAO. Below we list the most important areas of focus within the community, the tools we use and how to get started. 
 

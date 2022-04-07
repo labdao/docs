@@ -1,3 +1,8 @@
+---
+title: Goal
+description: The goal of OpenLab is to provide the infrastructure for the LabDAO community to grow and innovate.
+---
+
 # Goal
 The goal of openlab is to provide the infrastructure for the LabDAO community to grow and innovate. Historically, as communities have come together to allocate scarce ressources, such as cost-intensive laboratory services or compute, markets have emerged. In addition, as communities grow, sub-groups organically emerge to lower the cost of communication and enable specialization. 
 

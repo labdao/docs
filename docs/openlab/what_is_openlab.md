@@ -1,4 +1,10 @@
-# What Is openlab?
+---
+title: What is OpenLab?
+description: OpenLab is an exchange protocol allowing members within the LabDAO community to exchange services with each other.
+sidebar_position: 1
+---
+
+# What Is OpenLab?
 OpenLab is an exchange protocol allowing members within the LabDAO community to exchange services with each other. While we focus on computational services in the beginning, openlab is a peer-to-peer marketplace protocol accounting built to handle all forms of off-chain work. 
 
 ## What are the key steps of openlab?
