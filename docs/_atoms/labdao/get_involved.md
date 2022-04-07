@@ -13,7 +13,7 @@ Welcome to LabDAO! This is a simple process on how to become a meaningful contri
 ## Community roles
 The LabDAO online community is a social network and open source community. To facilitate the flow of information and manage control over the project, we have introduced five overall roles. 
 
-<img width="1070" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/docs/labdaocommunity_2.png">
+![labdao community](https://github.com/labdao/assets/blob/main/openlab_exchange/labdaocommunity_2.png?raw=true)
 
 An overview of the roles within the DAO: 
 * user - a user within LabDAO is engaging with the community in a one-sided relationship, for example the use of a tool that was developed by LabDAO. 

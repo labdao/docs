@@ -1,4 +1,4 @@
-<img width="1070" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/social/Twitter_Banner.png">
+![labdao progress](https://github.com/labdao/assets/blob/main/social/Twitter_Banner.png?raw=true)
 
 # Mission
 LabDAO is on a mission to accelerate progress in the life sciences by developing open tools and making them globally accessible. We are coming together to build a community-owned and operated exchange of wet-lab and dry-lab laboratory services.
@@ -35,8 +35,7 @@ The LabDAO will ensure the quality of services exchanged within its community us
 2. Participants on the openlab exchange need to stake $LAB tokens proportional to the value of transactions that they are offering and consuming. In case of fraudulent behaviour, the staked $LAB tokens can be slased by the community. 
 3. The community is maintaing a list of trusted service providers that are participating in the exchange. The on-chain transaction record serves as a basis for user experience ratings.
 
-<img width="1070" alt="labdao_progress" src="https://github.com/labdao/assets/blob/main/docs/openlabmap.png">
-
+![openlab map](https://github.com/labdao/assets/blob/main/docs/openlabmap.png?raw=true)
 
 The long term goals of LabDAO can be broken down into three stages: 
 1. the introduction of the openlab marketplace will reduce the hurdles of using biomedical tools - with an initial focus on computational biology. 
@@ -47,7 +46,7 @@ The long term goals of LabDAO can be broken down into three stages:
 ### Articles
 * [building a LabDAO for web3 biotech](https://twitter.com/Niklas_TR/status/1459167754888613890?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed&ref_url=notion%3A%2F%2Fwww.notion.so%2Flabdao%2FREADME-61ad20959572440988d0c947c5630dab)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New article with <a href="https://twitter.com/aryelipman?ref_src=twsrc%5Etfw">@aryelipman</a>: LabDAO - What if scientists could do R&amp;D as easily as a developer could spin up a new AWS instance? What if we could enable someone on their laptop to develop a new biotech?🧵<br>link: <a href="https://t.co/6eqWkKyoUa">https://t.co/6eqWkKyoUa</a></p>&mdash; Niklas Rindtorff in Denver (@Niklas_TR) <a href="https://twitter.com/Niklas_TR/status/1459167754888613890?ref_src=twsrc%5Etfw">November 12, 2021</a></blockquote> 
+<blockquote><p lang="en" dir="ltr">New article with <a href="https://twitter.com/aryelipman?ref_src=twsrc%5Etfw">@aryelipman</a>: LabDAO - What if scientists could do R&amp;D as easily as a developer could spin up a new AWS instance? What if we could enable someone on their laptop to develop a new biotech?🧵<br />link: <a href="https://t.co/6eqWkKyoUa">https://t.co/6eqWkKyoUa</a></p>&mdash; Niklas Rindtorff in Denver (@Niklas_TR) <a href="https://twitter.com/Niklas_TR/status/1459167754888613890?ref_src=twsrc%5Etfw">November 12, 2021</a></blockquote> 
 
 * [What is the goal of LabDAO](https://mirror.xyz/niklasrindtorff.eth/lQPDTMtKG4Z47jju5NNg9NLtQpmiHGMmS1pX8KkCMME)
 * [How could openlab look like?](https://mirror.xyz/niklasrindtorff.eth/JvXLoD_boXYMo6JQGPlpSzZLWBCupHgy6NvVUab0apw)
