@@ -3,9 +3,12 @@ A transaction of openlab is a multi-step process. To break down the required ste
 
 ## sequence of events
 0. the [client] has installed the [openlab CLI] and created a [local wallet]
-1. POST job_object - check http
-2. verify job_object via jobURI - check ipfs
-3. check the graph that jobURI is among the  valid_and_active jobURIs - check contract
-4. access information from job object and start worker
-5. deposit result and metadata to IPFS, generate tokenURI
-6. call "swap" contract function that 
+1. the [client] lists the available [applications] using: 
+``` openlab app list ```
+2. 
+3.     jobs POST job_object - check http
+4. verify job_object via jobURI - check ipfs
+5. check the graph that jobURI is among the  valid_and_active jobURIs - check contract
+6. access information from job object and start worker
+7. deposit result and metadata to IPFS, generate tokenURI
+8. call "swap" contract function that 
