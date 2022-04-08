@@ -1,10 +1,22 @@
 # How does a transaction on openlab work? 
 A transaction of openlab is a multi-step process. To break down the required steps, we illustrate an application call that includes the basic *lab-reverse-complement* service. 
 
+**TODO - feature in development!**
+
 ## phase 1: transaction submission on the [client] side
 0. the client has installed the [openlab CLI] and created a [local wallet]
-1. the client lists the available [applications] using: ``` openlab app list ```
-2. 
+1. the client lists the available [applications] using ``` openlab app list ```. In our example the service we focus on ```reverse-complement```
+2. the client submits a job using ``` openlab job submit reverse-complement```. During this step the command line is asking for input information interactively. In case the user prefers to use the tool without an interactive component, a JSON template can be exported, edited and submitted with the commands below:
+```
+# export the job instruction JSON object to a example_directory
+openlab job export reverse-complement /example_directory
+# edit the job instruction object locally
+nano /target_directory/job-reverse_complement.json
+# submit a prepared job instruction instead of an interactive process
+openlab job submit -t /target_directory/job-reverse_complement.json
+```
+
+
 3.     jobs POST job_object - check http
 4. verify job_object via jobURI - check ipfs
 5. check the graph that jobURI is among the  valid_and_active jobURIs - check contract
