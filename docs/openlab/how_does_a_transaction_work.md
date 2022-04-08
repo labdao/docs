@@ -3,8 +3,7 @@ A transaction of openlab is a multi-step process. To break down the required ste
 
 ## sequence of events
 0. the [client] has installed the [openlab CLI] and created a [local wallet]
-1. the [client] lists the available [applications] using: 
-``` openlab app list ```
+1. the [client] lists the available [applications] using: ``` openlab app list ```
 2. 
 3.     jobs POST job_object - check http
 4. verify job_object via jobURI - check ipfs
