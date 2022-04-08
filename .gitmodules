@@ -1,0 +1,3 @@
+[submodule "docs/_projects/assets"]
+	path = docs/_projects/assets
+	url = git@github.com:labdao/assets

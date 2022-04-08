@@ -25,6 +25,14 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/labdao/docs/edit/main',
           routeBasePath: '/',
+          exclude: [
+            'projects/*/*.{md,mdx}',
+            '**/_*.{md,mdx}',
+          ],
+          include: [
+            '_projects/*/docs/**/*.{md,mdx}',
+            '*/**/*.{md,mdx}',
+          ],
         },
         blog: false,
         theme: {
