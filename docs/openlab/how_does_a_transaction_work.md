@@ -8,6 +8,7 @@ A transaction of openlab is a multi-step process. To break down the required ste
 1. the client lists the available [applications] using ``` openlab app list ```. In our example the service we focus on ```reverse-complement```
 2. the client submits a job using ``` openlab job submit reverse-complement```. During this step the command line is asking for input information interactively. In case the user prefers to use the tool without an interactive component, a JSON template can be exported, edited and submitted with the commands below:
 ```
+# non-interactive submission of jobs on openlab:
 # export the job instruction JSON object to a example_directory
 openlab job export reverse-complement /example_directory
 # edit the job instruction object locally
