@@ -32,7 +32,7 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 ````
 
 2. the job object is pinned on IPFS, giving us a ```jobURI``` which will be needed when interacting with the smart contracts of the openlab exchange. The function call is ``` openlab file push job-reverse_complement_20220408184322.json```. 
-3. the CLI interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. 
+3. the CLI interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. 
 
 
 
