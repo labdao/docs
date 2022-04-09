@@ -5,13 +5,16 @@ sidebar_position: 4
 ---
 
 # Contributing
-
 When contributing to this repository, please first discuss the change you wish to make via issue or any other method with the owners of this repository before making a change. 
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-## Pull Request Process
+## LabDAO habits
+1. we encourage focused and deep collaboration among our community members
+2. we are committed to working in the open and asynchronously where possible. This means we prefer text over audio and github over discord.
+3. we respect eachother's time and are present with the group when attending a meeting.
 
+## Pull Request Process
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
 3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
@@ -28,7 +31,6 @@ Open scientific tools and services are a public good. To maintain the free excha
 * The growth of LabDAO will lead to the emergence of multiple nested daughter organisations, facilitated using the openlab teams framework.
 
 ## Code of Conduct at LabDAO
-
 ### Our Pledge
 In the interest of fostering an open, collaborative, and welcoming environment, we pledge to making participation in our LabDAO projects and community a welcoming experience for everyone.
 
@@ -48,13 +50,11 @@ In the interest of fostering an open, collaborative, and welcoming environment, 
 - Use of sexual or discriminatory imagery, comments, or jokes and unwelcome sexual attention.
 
 ### Procedures for Reporting CoC violations
-
 If someone makes you feel uncomfortable through their behaviours or actions, report it as soon as possible. You can reach out to members of the [LabDAO core team](https://discord.gg/labdao) and they will forward your concerns. Issues directly concerning members of the core team will be dealt with by other members of the core team and possible conflicts of interest will be taken into account. You can also contact the core team via e-mail at dao (at) labdao (dot) com.
 
 All reports will be handled with utmost discretion and confidentially.
 
 ## Attribution and Acknowledgements
-
 - The [nf-core Code of Conduct](https://nf-co.re/code_of_conduct)
 - The [Contributor Covenant, version 1.4](http://contributor-covenant.org/version/1/4)
 - The [OpenCon 2017 Code of Conduct](http://www.opencon2017.org/code_of_conduct) (CC BY 4.0 OpenCon organisers, SPARC and Right to Research Coalition)
