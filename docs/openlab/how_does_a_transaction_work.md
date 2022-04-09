@@ -71,6 +71,7 @@ once the transaction is verified and claimed the server can get to work and proc
     "image": "https://gateway.pinata.cloud/ipfs/QmZ9oReVUiNQSc9GaqqTEPUW3XHo6eprVSa9nqbGNotP8B"
 }
 ````
-3. call "swap" contract function that 
+3. the server calls the ```swap```function, which includes both the minting of a LAB-NFT, the transfer of that LAB-NFT to the client, the calling of ```closeJob```, and the claiming of funds held within the escrow. 
 
-## phase 4: transaction end on the [client] side
+## phase 5: transaction end on the [client] side
+In the near future, clients will be able to flag a transaction between receiving the LAB-NFT and release of funds from escrow.
