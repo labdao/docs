@@ -17,6 +17,8 @@ nano /target_directory/job-reverse_complement.json
 openlab job submit -t /target_directory/job-reverse_complement.json
 ```
 
+![openlab_state](https://github.com/labdao/assets/blob/main/openlab_exchange/state_transition.png?raw=true)
+
 ## phase 2: transaction submission on the [client] side
 underneath the hood of ```openlab job submit``` multiple functions are called: 
 1. the job object, a JSON with the instructions, is generated. In our case ```job-reverse_complement_20220408184322.json``` is stored in a local directory controlled by the client. An example for ```job-reverse_complement_20220408184322.json``` is below: 
@@ -36,7 +38,7 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 
 
 ## phase 3: transaction verifcation on the [provider] side
-1. the server checks the state of the openlab exchange contract by querying the subgraph for jobs with ```open``` state that match the competences of the server. In our example, the server checks for interactions requesting the reverse-complement service. 
+1. the server checks the state of the openlab exchange contract by querying the [subgraph](https://thegraph.com/hosted-service/subgraph/tohrnii/openlab-exchange-mumbai-c) for jobs with ```open``` state that match the competences of the server. In our example, the server checks for interactions requesting the reverse-complement service. 
 2. verify job_object via jobURI - check ipfs
 3. while not implemented in thejobs POST job_object - check http
 
