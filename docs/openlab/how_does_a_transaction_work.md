@@ -33,7 +33,7 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 ````
 
 2. the job object is pinned on IPFS, giving us a ```jobURI``` which will be needed when interacting with the smart contracts of the openlab exchange. The function call is ``` openlab file push job-reverse_complement_20220408184322.json```. 
-3. the CLI interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. The job is created and enters the ```open``` state.
+3. the client interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. The job is created and enters the ```open``` state.
 4. optional: to facilitate the execution of services, the client can also share the job object directly with an [index service] maintained by the DAO via http. The service broadcasts all requests from clients to a collection of community-registered servers. 
 
 ![openlab_state](https://github.com/labdao/assets/blob/main/openlab_exchange/state_transition.png?raw=true)
@@ -41,13 +41,16 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 ## phase 3: transaction verifcation on the [provider] side
 1. the server checks the state of the openlab exchange contract by querying the [subgraph](https://thegraph.com/hosted-service/subgraph/tohrnii/openlab-exchange-mumbai-c) for jobs within the ```open``` state.
 2. the server pulls job objects via their ``` jobURI``` from IPFS and checks wether the requested service is within the repertoire of services that can be provided.
-3. optional: to facilitate the execution of services, the server can receive job objects from the [index service] and filters incoming requests before verifying them (step 1) and their job objects (step 2) 
+3. optional: to facilitate the execution of services, the server can receive job objects from the [index service] and filters incoming requests before verifying them (step 1) and their job objects (step 2).
+4. the server interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```acceptJob``` function, with the transaction's ```_jobId``` being the only input argument.
+5. the server validates that the ```acceptJob``` function call was successful. 
 
 ![](https://github.com/labdao/assets/blob/main/openlab_exchange/Group%203.png?raw=true)
 
-## 
-5. access information from job object and start worker
-6. deposit result and metadata to IPFS, generate tokenURI
-7. call "swap" contract function that 
+## phase 4: transaction processing on the [provider] site
+once the transaction is verified and claimed the server can get to work and process the request.
+1. the server accesses required information from job object, including the pulling of input data from IPFS, and starts the requested service.
+2. the server collects all output data generated during job processing, and pins files to IPFS together with a metadata JSON object reffered to as the token object. The token object is referenced with a ```tokenURI``` which is an input argument for the close 
+3. call "swap" contract function that 
 
 ## phase 4: transaction end on the [client] side
