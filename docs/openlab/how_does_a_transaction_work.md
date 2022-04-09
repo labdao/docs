@@ -17,7 +17,6 @@ nano /target_directory/job-reverse_complement.json
 openlab job submit -t /target_directory/job-reverse_complement.json
 ```
 
-![openlab_state](https://github.com/labdao/assets/blob/main/openlab_exchange/state_transition.png?raw=true)
 
 ## phase 2: transaction submission on the [client] side
 underneath the hood of ```openlab job submit``` multiple functions are called: 
@@ -34,11 +33,12 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 ````
 
 2. the job object is pinned on IPFS, giving us a ```jobURI``` which will be needed when interacting with the smart contracts of the openlab exchange. The function call is ``` openlab file push job-reverse_complement_20220408184322.json```. 
-3. the CLI interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. 
+3. the CLI interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. The job is created and enters the ``òpen``` state.
 
+![openlab_state](https://github.com/labdao/assets/blob/main/openlab_exchange/state_transition.png?raw=true)
 
 ## phase 3: transaction verifcation on the [provider] side
-1. the server checks the state of the openlab exchange contract by querying the [subgraph](https://thegraph.com/hosted-service/subgraph/tohrnii/openlab-exchange-mumbai-c) for jobs with ```open``` state that match the competences of the server. In our example, the server checks for interactions requesting the reverse-complement service. 
+1. the server checks the state of the openlab exchange contract by querying the [subgraph](https://thegraph.com/hosted-service/subgraph/tohrnii/openlab-exchange-mumbai-c) for jobs within the ```open``` state that match the competences of the server. In our example, the server checks for interactions requesting the reverse-complement service. 
 2. verify job_object via jobURI - check ipfs
 3. while not implemented in thejobs POST job_object - check http
 
