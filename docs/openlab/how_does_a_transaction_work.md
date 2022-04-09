@@ -49,8 +49,9 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 
 ## phase 4: transaction processing on the [provider] site
 once the transaction is verified and claimed the server can get to work and process the request.
-1. the server accesses required information from job object, including the pulling of input data from IPFS, and starts the requested service.
-2. the server collects all output data generated during job processing, and pins files to IPFS together with a metadata JSON object reffered to as the token object. The token object is referenced with a ```tokenURI``` which is an input argument for the ```closeJob``` function. An example token object is displayed below: 
+1. the server accesses required information from job object, including the pulling of input data from IPFS
+2. the server takes the input information and starts the service. In our case the service is accessible via https://02wun6.deta.dev/ and the request from the server would look like ``` curl https://02wun6.deta.dev/ctatataaataaataaataaatattatatatatag```. In a live deployment, where running the service was not for free, the server would protect the endpoint. 
+3. the server collects all output data generated during job processing, and pins files to IPFS together with a metadata JSON object reffered to as the token object. The token object is referenced with a ```tokenURI``` which is an input argument for the ```closeJob``` function. An example token object is displayed below: 
 
 ````
 {
