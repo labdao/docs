@@ -4,9 +4,9 @@ A transaction of openlab is a multi-step process. To break down the required ste
 **TODO - feature in development!**
 
 ## phase 1: transaction definition on the [client] side
-0. the client has installed the [openlab CLI] and created a [local wallet]
-1. the client lists the available [applications] using ``` openlab app list ```. In our example the service we focus on ```reverse-complement```
-2. the client submits a job using ``` openlab job submit reverse-complement```. During this step the command line is asking for input information interactively. In case the user prefers to use the tool without an interactive component, a JSON template can be exported, edited and submitted with the commands below:
+1. the client has installed the [openlab CLI] and created a [local wallet]
+2. the client lists the available [applications] using ``` openlab app list ```. In our example the service we focus on ```reverse-complement```
+3. the client submits a job using ``` openlab job submit reverse-complement```. During this step the command line is asking for input information interactively. In case the user prefers to use the tool without an interactive component, a JSON template can be exported, edited and submitted with the commands below:
 ```
 # non-interactive submission of jobs on openlab:
 # export the job instruction JSON object to a example_directory
@@ -35,14 +35,14 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 3. the CLI interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. 
 
 
-
-
-## phase 3: transaction handling on the [provider] side
-1. jobs POST job_object - check http
+## phase 3: transaction verifcation on the [provider] side
+1. the server checks the state of the openlab exchange contract by querying the subgraph for jobs with ```open``` state that match the competences of the server. In our example, the server checks for interactions requesting the reverse-complement service. 
 2. verify job_object via jobURI - check ipfs
-3. check the graph that jobURI is among the  valid_and_active jobURIs - check contract
-4. access information from job object and start worker
-5. deposit result and metadata to IPFS, generate tokenURI
-6. call "swap" contract function that 
+3. while not implemented in thejobs POST job_object - check http
+
+## 
+5. access information from job object and start worker
+6. deposit result and metadata to IPFS, generate tokenURI
+7. call "swap" contract function that 
 
 ## phase 4: transaction end on the [client] side
