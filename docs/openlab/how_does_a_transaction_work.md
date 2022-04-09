@@ -50,7 +50,27 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 ## phase 4: transaction processing on the [provider] site
 once the transaction is verified and claimed the server can get to work and process the request.
 1. the server accesses required information from job object, including the pulling of input data from IPFS, and starts the requested service.
-2. the server collects all output data generated during job processing, and pins files to IPFS together with a metadata JSON object reffered to as the token object. The token object is referenced with a ```tokenURI``` which is an input argument for the close 
+2. the server collects all output data generated during job processing, and pins files to IPFS together with a metadata JSON object reffered to as the token object. The token object is referenced with a ```tokenURI``` which is an input argument for the ```closeJob``` function. An example token object is displayed below: 
+
+````
+{
+    "service": 0,
+    "service_name": "lab-reverse_complement",
+    "input":{
+        "sequence": "ctatataaataaataaataaatattatatatatag"
+    },
+    "output":{
+        "sequence": "ctatatatataatatttatttatttatttatatag"
+    },
+    "metadata":{
+        "repository": "https://github.com/openlab-apps/lab-reverse_complement/tree/2-serverless-stage",
+        "commit": "ddf80e0e953fde3d8cbe9f17fc3f1108cac7bc37",
+        "deployment": "https://02wun6.deta.dev/"
+    },
+    "job_uri": "ipfs/QmdQP9D44Hgp8697FpGJrkTiQYSiUH3xEsvumKX3jJmV58",
+    "image": "https://gateway.pinata.cloud/ipfs/QmZ9oReVUiNQSc9GaqqTEPUW3XHo6eprVSa9nqbGNotP8B"
+}
+````
 3. call "swap" contract function that 
 
 ## phase 4: transaction end on the [client] side
