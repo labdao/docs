@@ -43,6 +43,8 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 2. the server pulls job objects via their ``` jobURI``` from IPFS and checks wether the requested service is within the repertoire of services that can be provided.
 3. optional: to facilitate the execution of services, the server can receive job objects from the [index service] and filters incoming requests before verifying them (step 1) and their job objects (step 2) 
 
+![](https://github.com/labdao/assets/blob/main/openlab_exchange/Group%203.png?raw=true)
+
 ## 
 5. access information from job object and start worker
 6. deposit result and metadata to IPFS, generate tokenURI
