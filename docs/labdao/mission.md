@@ -1,7 +1,15 @@
+---
+title: Mission
+description: LabDAO's mission is to accelerate progress in the life sciences by developing open tools and making them globally accessible.
+sidebar_position: 2
+---
+
+![labdao_progress](https://github.com/labdao/assets/blob/main/social/Twitter_Banner.png?raw=true)
+
 # Mission
 LabDAO is on a mission to accelerate progress in the life sciences by developing open tools and making them globally accessible. We are coming together to build a community-owned and operated exchange of wet-lab and dry-lab laboratory services.
 
-We want to live in a world in which the ability to unleash one's potential to develop technology is not bounded by limited access to funding, hardware and distribution channels. The tools we are building together are designed to lower the barriers for biotech entrepreneurs and life scientists to raise funding, to develop technologies and to share them in a permissionless way. Put differently, we want to live in a world in which students can drop out of school because they developed a therapeutic candidate from their laptop.
+We want to live in a world in which the ability to unleash one's potential to develop technology is not bounded by limited access to funding, hardware and distribution channels. The tools we are building together are designed to lower the barriers for inventors to raise funding, to develop technologies and to share them in a permissionless way. Put differently, we want to live in a world in which students can drop out of school because they developed a therapeutic candidate from their laptop.
 
 ## The Problem
 Open source code has accelerated progress in information technology over the last 20 years. This success is enabled by the ability to share instructions (code) at low cost and to reproduce results with high reliability. In addition, the sharing of code is accelerated by technology market dynamics in which intellectual property is less relevant than time to market and trade secrets around implementation.
@@ -33,24 +41,23 @@ The LabDAO will ensure the quality of services exchanged within its community us
 2. Participants on the openlab exchange need to stake $LAB tokens proportional to the value of transactions that they are offering and consuming. In case of fraudulent behaviour, the staked $LAB tokens can be slased by the community. 
 3. The community is maintaing a list of trusted service providers that are participating in the exchange. The on-chain transaction record serves as a basis for user experience ratings.
 
+![openlab map](https://github.com/labdao/assets/blob/main/openlab_exchange/openlabmap.png?raw=true)
+
 The long term goals of LabDAO can be broken down into three stages: 
 1. the introduction of the openlab marketplace will reduce the hurdles of using biomedical tools - with an initial focus on computational biology. 
 2. the growth in transactions and rise in potential conflicts around service specifications will lead to the emergence of community-generated standards for biological services.
 3. the on-chain record of transactions, including metadata and data assets, will function as a dynamically evolving knowledge graph - a global laboratory notebook.
 
 ## Learn more
+### Articles
 * [building a LabDAO for web3 biotech](https://twitter.com/Niklas_TR/status/1459167754888613890?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed&ref_url=notion%3A%2F%2Fwww.notion.so%2Flabdao%2FREADME-61ad20959572440988d0c947c5630dab)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New article with <a href="https://twitter.com/aryelipman?ref_src=twsrc%5Etfw">@aryelipman</a>: LabDAO - What if scientists could do R&amp;D as easily as a developer could spin up a new AWS instance? What if we could enable someone on their laptop to develop a new biotech?🧵<br>link: <a href="https://t.co/6eqWkKyoUa">https://t.co/6eqWkKyoUa</a></p>&mdash; Niklas Rindtorff in Denver (@Niklas_TR) <a href="https://twitter.com/Niklas_TR/status/1459167754888613890?ref_src=twsrc%5Etfw">November 12, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>)
+<blockquote><p lang="en" dir="ltr">New article with <a href="https://twitter.com/aryelipman?ref_src=twsrc%5Etfw">@aryelipman</a>: LabDAO - What if scientists could do R&amp;D as easily as a developer could spin up a new AWS instance? What if we could enable someone on their laptop to develop a new biotech?🧵<br />link: <a href="https://t.co/6eqWkKyoUa">https://t.co/6eqWkKyoUa</a></p>&mdash; Niklas Rindtorff in Denver (@Niklas_TR) <a href="https://twitter.com/Niklas_TR/status/1459167754888613890?ref_src=twsrc%5Etfw">November 12, 2021</a></blockquote> 
 
 * [What is the goal of LabDAO](https://mirror.xyz/niklasrindtorff.eth/lQPDTMtKG4Z47jju5NNg9NLtQpmiHGMmS1pX8KkCMME)
 * [How could openlab look like?](https://mirror.xyz/niklasrindtorff.eth/JvXLoD_boXYMo6JQGPlpSzZLWBCupHgy6NvVUab0apw)
 * [A Knowledge Graph for biological experiments](https://niklasrindtorff.substack.com/p/building-a-knowledge-graph-for-biological)
 
-Presentation on [LabDAO](https://t.co/kZbjQjT46G) at ETHDenver
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s3t4NxP-pFk?start=2136" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Podcast episode with [VitaDAO](https://www.youtube.com/watch?v=qBrPbiIpxMQ&ab_channel=VitaDAO)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qBrPbiIpxMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Videos
+* [LabDAO presentation at ETHDenver](https://www.youtube.com/embed/s3t4NxP-pFk?start=2136)
+* [Podcast episode with VitaDAO](https://www.youtube.com/watch?v=qBrPbiIpxMQ&ab_channel=VitaDAO)

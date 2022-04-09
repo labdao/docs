@@ -1,3 +1,9 @@
+---
+title: Adding a service
+description: How to add a new service to OpenLab.
+sidebar_position: 3
+---
+
 ## Adding a service
 
 OpenLab is currently in version 0.1 and only supports running nexftflow containers on our centralized compute infrastructure build on AWS. We are currently preparing the release of the complete backend infrastructure to allow more nodes to join the network. 

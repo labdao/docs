@@ -1,3 +1,9 @@
+---
+title: Contributing
+description: How to contribute to LabDAO.
+sidebar_position: 4
+---
+
 # Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue or any other method with the owners of this repository before making a change. 
