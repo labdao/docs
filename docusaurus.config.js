@@ -23,7 +23,16 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/labdao/docs/edit/main',
+          editUrl: ({ docPath }) => {
+            const pathArr = docPath.split('/');
+            let repo = 'docs';
+            let pathSliceIndex = 0;
+            if (pathArr.length > 1 && pathArr[0] === '_projects') {
+              repo = pathArr[1];
+              pathSliceIndex = 3;
+            }
+            return `https://github.com/labdao/${repo}/edit/main/docs/${pathArr.slice(pathSliceIndex).join('/')}`
+          },
           routeBasePath: '/',
           exclude: [
             'projects/*/*.{md,mdx}',
