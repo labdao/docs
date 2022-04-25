@@ -35,3 +35,7 @@ This command generates static content into the `build` directory and can be serv
 ### Deployment
 
 This repository is deployed using [Vercel](https://vercel.com/), which has a Docusaurus V2 template. Just create a new Vercel project, connect it to this repository, and click deploy, and you're off to the races!
+
+### Misc
+
+We collect anonymized analytics information from visitors to the documentation site to help us write better docs and understand which documentation is most important to our users.
