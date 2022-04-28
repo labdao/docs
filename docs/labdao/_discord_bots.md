@@ -28,6 +28,8 @@ Research Assistant is a general purpose discord bot made custom for the LabDAO d
 Ping checks the bot is responding and provides the current latency. 
 
 * \$\<ping\>:
+
+
 ![](https://i.imgur.com/edjIAKD.png)
 
 ### Link
