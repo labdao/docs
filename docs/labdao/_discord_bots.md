@@ -1,4 +1,4 @@
-# Research Assist 
+# Research Assistant Bot Documentation
 
 ## Introduction 
 
