@@ -1,32 +1,78 @@
 # Why does metadata matter?
+## Scientific data should be FAIR
 Scientific data is ideally stored according to [FAIR](https://www.go-fair.org/fair-principles/) principles, developed by [Mark Wilkinson](https://www.nature.com/articles/sdata201618). These include: 
-* Findability
-* Accessibility
-* Interoperability
-* Reuse 
+* **F**indability
+* **A**ccessibility
+* **I**nteroperability
+* **R**euse 
 
 Put differently, data is ideally stored at a location that is known to others, accessible to others, adheres to public standards and thus invites reuse. 
 
-Web3 brings new possibilities to share and control data and distribute data according to FAIR principles, while also enabling mechanisms that preserve 
+Web3 introduces new methods to share, control data and distribute data according to FAIR principles. These methods include:
 * direct content addressing 
 * on-chain provenance tracking
-* flexible access control
+* robust access control
 
-supercharges FAIR principles
+With these methods, data can be pinned visibly and addressable for everyone. Ownership of data can be traced and access to encrypted information can be tied to token ownership. Web3 increases the findability and accessibility of data - the "F" and "A" of FAIR.
 
-## Existing forms of metadata 
+To make data more interoperable ("I") and reuseable ("R") its formatting needs to be standardized and it needs to be presented with sufficient metadata to provide relevant context. LabDAO is an online community of scientists and engineers that, among many things, adopts and defines standards for data formats and metadata structure. This article introduces a simple standard for tokenized scientific data. 
+
+## Web3 x Bio forms of metadata 
+Let's take a look at common metadata formats seen in web3 and biotechnology. 
+
 ### ERC721
-In web3 most known for NFTs 
-opensea NFTs
-IP-NFT framwork by Molecule
+The most common use of metadata in web3 is for NFTs following the ERC721 standard. An object, often a digital artwork, is referenced within a metadata JSON together with additional attributes. Often these attributes give us more details about the artwork that matter to some collectors. 
 
-In bioinformatics used to understand processing steps of large data
-biocompute object
+![](https://hackmd.io/_uploads/BylIvxsrc.png)
 
-example: 
+This is how such a metadata JSON looks like. The picture of the penguin itself is referenced under *image* using a universal ressource identifier (URI). 
 
-### biocompute object
-IEEE standard
+```` pudgy.json
+{
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Normal"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Lab Coat"
+    },
+    {
+      "trait_type": "Face",
+      "value": "Cross Eyed"
+    },
+    {
+      "trait_type": "Head",
+      "value": "Cowboy Hat"
+    }
+  ],
+  "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+  "image": "https://ipfs.io/ipfs/QmNf1UsmdGaMbpatQ6toXSkzDpizaGmC9zfunCyoz1enD5/penguin/3020.png",
+  "name": "Pudgy Penguin #3020"
+}
+````
+
+This existing NFT standard as also been adapted by our friends at [Molecule](https://www.molecule.to/) to represent legal sublicensese for intellectual property. This form of NFT is called an IP-NFTs. 
+
+### Biocompute Objects
+In bio, specifically computational biology, an international standard for metadata of research data exists: [biocompute objects](https://www.biocomputeobject.org/). 
+
+To adhere to this standard (which rarely happens), scientists have to provide extensive information across multiple aspects: 
+* who created the data (provenance domain)
+* a description of the content (usability domain)
+* a step-by-step computational pipeline of how the data was generated (description domain)
+* information about the runtime in which the processing was run (execution domain)
+* links to input and output data (io domain)
+* parameters that were used in the computational pipeline (parameter domain)
+
+
+
+
 wordy
 no web3 primitives like content addressing URIs, nested JSONs, wallet-based identities
 
@@ -34,12 +80,7 @@ example https://biocomputeobject.org/objects/view/https/biocomputeobject.org/BCO
 
 domains and sections
 * object information - ID
-* provenance - name and date
-* usability - description of content
-* description - misnomer, computational graph of how the object was derived
-* execution - information about runtime
-* io domain 
-* parametric domain
+
 
 example
 
