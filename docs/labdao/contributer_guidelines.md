@@ -1,6 +1,6 @@
 ---
 title: Contributor Guidelines
-description: How to contribute to LabDAO.
+description: Guidelines for LabDAO contributors.
 sidebar_position: 4
 ---
 
