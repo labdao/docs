@@ -1,14 +1,10 @@
 ---
-title: Contributing
+title: Contributor Guidelines
 description: How to contribute to LabDAO.
 sidebar_position: 4
 ---
 
-# Contributing
-When contributing to this repository, please first discuss the change you wish to make via issue or any other method with the owners of this repository before making a change. 
-
-Please note we have a code of conduct, please follow it in all your interactions with the project.
-
+# Contributor Guidelines
 ## LabDAO habits
 1. we encourage focused and deep collaboration among our community members
 2. we are committed to working in the open and asynchronously where possible. This means we prefer text over audio and github over discord.
@@ -27,8 +23,8 @@ Open scientific tools and services are a public good. To maintain the free excha
 * The members of LabDAO shape the governance process.
 * The governance decisions made within LabDAO are enforced by the community or accountable delegates.
 * The violation of governance decisions is followed by graduated sanctions.
-* Conflicts within the community should be resolved within it using low costs.
-* The growth of LabDAO will lead to the emergence of multiple nested daughter organisations, facilitated using the openlab teams framework.
+* Conflicts within the community should be resolved within it.
+* The growth of LabDAO will lead to the emergence of multiple nested daughter organisations.
 
 ## Code of Conduct at LabDAO
 ### Our Pledge
