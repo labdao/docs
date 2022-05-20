@@ -1,11 +1,10 @@
 ---
-title: What is the lab-exchange?
-description: The lab-exchange is a marketplace protocol allowing members within the LabDAO community to exchange services with each other.
+title: What is the LabExchange?
+description: A marketplace protocol allowing members within the LabDAO community to exchange services with each other.
 sidebar_position: 1
 ---
 ![Group_48095736](https://user-images.githubusercontent.com/18559148/169604391-e8cb4e89-44f0-4aae-84fa-c639b2c647ab.png)
 
-# What Is the lab-exchange?
 The lab-exchange is a marketplace protocol allowing members within the LabDAO community to exchange services with each other. While we focus on computational services in the beginning, the lab-exchange is a peer-to-peer marketplace protocol designed to handle all forms of off-chain work. 
 
 ## What are the key steps of the lab-exchange?
