@@ -1,3 +1,9 @@
+---
+title: Join a Lab
+description: How do I join a Lab?
+sidebar_position: 2
+---
+
 # How do I join a Lab?
 Currently, members looking for a lab will be able to browse a [table of existing labs](https://airtable.com/shrVkdy62K1qOxVng/tblya1qd60spyXRQw) and reach out to the team's initiator. 
 

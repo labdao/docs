@@ -1,3 +1,9 @@
+---
+title: What are Labs?
+description: LabTeams is an organizational model for LabDAO that allows any member to launch a virtual laboratory.
+sidebar_position: 1
+---
+
 # What are LabTeams?
 ![](https://i.imgur.com/azu4V5k.png)
 
