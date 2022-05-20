@@ -1,5 +1,5 @@
-# How does a transaction on openlab work? 
-A transaction of openlab is a multi-step process. To break down the required steps, we illustrate an application call that includes the basic *lab-reverse-complement* service. 
+# How does a transaction on the lab-exchange work? 
+A transaction on the lab-exchange is a multi-step process. To break down the required steps, we illustrate an application call that includes the basic *lab-reverse-complement* service. 
 
 **TODO - feature in development!**
 
@@ -33,7 +33,7 @@ underneath the hood of ```openlab job submit``` multiple functions are called:
 ````
 
 2. the job object is pinned on IPFS, giving us a ```jobURI``` which will be needed when interacting with the smart contracts of the openlab exchange. The function call is ``` openlab file push job-reverse_complement_20220408184322.json```. 
-3. the client interacts with the openlab [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. The job is created and enters the ```open``` state.
+3. the client interacts with the lab-exchange [exchange contract](https://mumbai.polygonscan.com/address/0xfcF2b192c888d411827fDa1884C6FE2438C15Ad0#writeContract) and calls the ```submitJob``` function. The ```jobURI``` of the job object is an argument of this function. The job is created and enters the ```open``` state.
 4. optional: to facilitate the execution of services, the client can also share the job object directly with an [index service] maintained by the DAO via http. The service broadcasts all requests from clients to a collection of community-registered servers. 
 
 ![openlab_state](https://github.com/labdao/assets/blob/main/openlab_exchange/state_transition.png?raw=true)
