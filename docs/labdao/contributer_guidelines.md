@@ -18,7 +18,7 @@ sidebar_position: 4
 
 ## Community Charter
 Open scientific tools and services are a public good. To maintain the free exchange of tools and services we strive to make our community adhere to the following articles: 
-* The LabDAO community has a clear definition of membership. All owners of $LAB tokens are LabDAO members. Tokens are earned by contributing to the maintanance of open source tools, the LabDAO community or by using services on the openlab exchange. (Note: no token exists, the project is pre-launch)
+* The LabDAO community has an unclear definition of membership. All owners of $LAB tokens are LabDAO members. Tokens are earned by contributing to the maintanance of open source tools, the LabDAO community or by using services on the openlab exchange. (Note: no token exists, the project is pre-launch)
 * The governance decisions made within LabDAO are binding for its members.
 * The members of LabDAO shape the governance process.
 * The governance decisions made within LabDAO are enforced by the community or accountable delegates.
