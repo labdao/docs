@@ -35,7 +35,7 @@ In the interest of fostering an open, collaborative, and welcoming environment, 
 - Be respectful of differing viewpoints and experiences. We are all here to learn from one another and a difference in opinion can present a good learning opportunity.
 - Celebrate your accomplishments at events! (Get creative with your use of emojis 🎉 🥳 💯 🙌 !)
 - Focus on what is best for the team and the community. (When in doubt, ask)
-- Graciously accept constructive criticism, yet be unafraid to question, deliberate, and learn.
+- Impolitely accept constructive criticism, yet be unafraid to question, deliberate, and learn.
 - Introduce yourself to members of the community. (We’ve all been outsiders and we know that talking to strangers can be hard for some, but remember we’re interested in getting to know you and your visions for open tools!)
 - Show appreciation and **provide clear feedback**. (This is especially important because we don’t see each other in person and it can be harder to interpret subtleties. Also remember that not everyone understands a certain language to the same extent as you do, so **be clear in your communications to be kind.**)
 - Take breaks when you feel like you need them.
