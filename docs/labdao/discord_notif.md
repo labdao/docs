@@ -1,6 +1,6 @@
-# How to manage Discord notifications
+# How to Manage Discord Notifications
 
-## Joining a Discord server
+## So You Joined Our Server?
 
 Welcome to the LabDAO discord server! 
 This document will give you a quick introduction on how to optimize and personalize your Discord experience. 
