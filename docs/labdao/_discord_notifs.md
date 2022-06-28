@@ -25,6 +25,7 @@ Muting channels and categories highlights activity from channels you actively wa
 
 ### Managing Channels and Categories
 Left clikcing on a category will pull up the following menu:
+
 ![](https://i.imgur.com/TefPb72.png)
 
 Selecting the Mute Category option will hide all traffic from the channels in the category. 
