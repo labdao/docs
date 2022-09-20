@@ -1,5 +1,5 @@
 ---
-title: What is the LabExchange?
+title: What is the Exchange?
 description: A marketplace protocol allowing members within the LabDAO community to exchange services with each other.
 sidebar_position: 1
 ---
