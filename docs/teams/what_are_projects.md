@@ -1,5 +1,5 @@
 ---
 title: What are Projects?
-description: 
+description: Projects have a defined beginning and end. Labs work together on projects.
 sidebar_position: 2
 ---
