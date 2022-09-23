@@ -1,0 +1,24 @@
+## in-vitro cardiac ion-channel engagement 
+https://tdcommons.ai/single_pred_tasks/tox/#herg-blockers
+
+https://tdcommons.ai/single_pred_tasks/tox/#herg-central
+
+## in-vitro mutagenticity (Ames assay) OECD 471
+https://tdcommons.ai/single_pred_tasks/tox/#ames-mutagenicity
+
+## cTOX21 - complete Tox21 data
+LabDAO managed data stream coming out of the joint program of..
+
+
+## other notes 
+
+## skin irritation/corrosion
+* NTP mixed https://ice.ntp.niehs.nih.gov/downloads/DataonICE/Skin_Irritation.xlsx
+
+## skin sensitization
+* local lymph node assay - OECD 429 - https://tdcommons.ai/single_pred_tasks/tox/#skin-reaction
+* NTP mixed https://ice.ntp.niehs.nih.gov/downloads/DataonICE/Skin_Sensitization.xlsx
+
+
+## eye irritation / corrosion
+* NTP mixed https://ice.ntp.niehs.nih.gov/downloads/DataonICE/Eye_Irritation.xlsx
