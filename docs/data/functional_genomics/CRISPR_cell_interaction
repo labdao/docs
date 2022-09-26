@@ -1,0 +1,26 @@
+# Pooled CRISPR screen
+
+```
+input: genetic interaction subgraph
+output: cell viability (numeric, scalar)
+```
+
+## DEPMAP
+for cell state representation learning - gene expression and CRISPR score data
+* gene level log2 TPM
+* transcript level log2 TPM
+* Salmon pseudoquantification
+
+transcript gene relationship is known
+gene gene relationship is sometimes known
+
+## CRISPR aggregator 
+gene expression and CRISPR score 
+in some cases with modifier
+
+# Perturb-Seq
+
+```
+input: genetic interaction subgraph
+output: genetic interaction subgraph
+``` 
