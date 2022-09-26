@@ -1,5 +1,5 @@
 ---
-title: Histology Image Preprocessing
+title: Image Preprocessing
 description: Preparing Histolgy images for downstream processing
 sidebar_position: 1
 ---
