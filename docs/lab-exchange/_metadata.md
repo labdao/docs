@@ -1,5 +1,5 @@
 # Why does metadata matter?
-At the heart of LabDAO is the idea that a community operated marketplace protocol for laboratory services could generate a [dynamic knowledge graph](https://niklasrindtorff.substack.com/p/building-a-knowledge-graph-for-biological) for biomedicine. The receits of past transactions among scientists on the lab-exchange serve as its building blocks.
+At the heart of LabDAO is the idea that a community operated marketplace protocol for laboratory services could generate a [dynamic knowledge graph](https://niklasrindtorff.substack.com/p/building-a-knowledge-graph-for-biological) for biomedicine. The receipts of past transactions among scientists on the lab-exchange serve as its building blocks.
 
 To create the marketplace protocol and the subsequent knowledge graph, we need to work out a structured way to describe scientific services and the resulting data. We need standards for composable metadata.
 
@@ -19,7 +19,7 @@ Web3 introduces new methods to share, control and distribute data according to F
 
 With these methods, data can be pinned visibly and addressable for everyone. Ownership of data can be traced and access to encrypted information can be tied to token ownership. Web3 increases the findability and accessibility of data - the "F" and "A" of FAIR.
 
-To make data more interoperable ("I") and reuseable ("R") its formatting needs to be standardized and it needs to be presented with sufficient metadata to provide relevant context. LabDAO is an online community of scientists and engineers that, among many things, adopts and defines standards for data formats and metadata structure. This article introduces a proposed simple standard for tokenized scientific data. 
+To make data more interoperable ("I") and reusable ("R") its formatting needs to be standardized and it needs to be presented with sufficient metadata to provide relevant context. LabDAO is an online community of scientists and engineers that, among many things, adopts and defines standards for data formats and metadata structure. This article introduces a proposed simple standard for tokenized scientific data. 
 
 ## Web3 x Bio forms of metadata 
 Let's take a look at common metadata formats seen in both web3 and bio. 
@@ -29,7 +29,7 @@ A common case where metadata in web3 is important, is for NFTs following the ERC
 
 ![You can see the artwork with its properties below](https://hackmd.io/_uploads/BylIvxsrc.png)
 
-This is how such a metadata JSON looks like. The picture of the penguin itself is referenced under *image* using a universal ressource identifier (URI). 
+This is how such a metadata JSON looks like. The picture of the penguin itself is referenced under *image* using a universal resource identifier (URI). 
 
 ```` pudgy.json
 {
@@ -55,7 +55,7 @@ This is how such a metadata JSON looks like. The picture of the penguin itself i
       "value": "Cowboy Hat"
     }
   ],
-  "description": "A collection 8888 Cute Chubby Pudgy Penquins sliding around on the freezing ETH blockchain.",
+  "description": "A collection 8888 Cute Chubby Pudgy Penguins sliding around on the freezing ETH blockchain.",
   "image": "https://ipfs.io/ipfs/QmNf1UsmdGaMbpatQ6toXSkzDpizaGmC9zfunCyoz1enD5/penguin/3020.png",
   "name": "Pudgy Penguin #3020"
 }
@@ -155,4 +155,4 @@ The lab-NFT concept allows us to exchange FAIR scientific data on the lab-exchan
 
 To accelerate not only progress in the basic sciences, but also innovation around valuable intellectual property, we will introduce threshold encryption for lab-NFTs. All input and output data is symmetrically encrypted before it is pinned to IPFS. The owner of the lab-NFT can request access to the referenced files using tools like [lit protocol](https://litprotocol.com/).
 
-Most scientific publications are based on data generated through multiple measurements. The same is true for most forms of intelectual property. To enable users to bundle individual lab-NFTs for simplified distribution, composable IP-NFTs will be developed based on existing implementations, such as [aavegotchi](https://github.com/aavegotchi/aavegotchi-contracts) which is inspired by the [EIP998](http://erc998.org/) proposal. Composability will allow authors to bundle their work and distribute it more easily. 
+Most scientific publications are based on data generated through multiple measurements. The same is true for most forms of intellectual property. To enable users to bundle individual lab-NFTs for simplified distribution, composable IP-NFTs will be developed based on existing implementations, such as [aavegotchi](https://github.com/aavegotchi/aavegotchi-contracts) which is inspired by the [EIP998](http://erc998.org/) proposal. Composability will allow authors to bundle their work and distribute it more easily. 
