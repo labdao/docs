@@ -3,6 +3,7 @@ title: Managing Discord Notifications
 description: How to avoid information overload on Discord.
 sidebar_position: 1
 ---
+
 ## So You Joined Our Server?
 
 Welcome to the LabDAO discord server! 

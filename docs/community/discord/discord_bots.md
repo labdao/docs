@@ -3,6 +3,7 @@ title: Research Assistant Bot
 description: Research Assistant is a general purpose discord bot made custom for the LabDAO discord server.
 sidebar_position: 2
 ---
+
 ## Introduction 
 
 Research Assistant is a general purpose discord bot made custom for the LabDAO discord server. The bot is in active development and new functions are consistently being added when new needs arise in the discord. Please comment on Github if you have an idea you believe improve this discord.
@@ -10,19 +11,18 @@ Research Assistant is a general purpose discord bot made custom for the LabDAO d
 ## Command Prefix and Docs Syntax
 
 ### Docs Syntax
-* <command> indicates command calls the function. 
-* {argument} indicates the argument is required for the function. 
-* [argument] indicates the argument is optional.
-* [argument]*(x -> y) indicates the command can take between x and y optional arguments. 
-* Bot parsing may require arguments to be conatined in quotation marks.
-* <command>\*\* indicates that the command requires specific permissions 
+* ```<command>``` indicates command calls the function. 
+* ```{argument}``` indicates the argument is required for the function. 
+* ```[argument]``` indicates the argument is optional.
+* ```[argument]*(x -> y)``` indicates the command can take between x and y optional arguments. 
+* ```<command>\*\*``` indicates that the command requires specific permissions 
 
 
 ### Calling Commands
 * Command Prefix\: $
-    * $<command> [argument] calls a command
+    * ```$<command> [argument]``` calls a command
 * Mentioning Bot will also call commands
-    *  @Research Assistant <command> [argument]
+    *  ```@Research Assistant <command> [argument]```
 * The bot is agnostic to capitalization on command calls but is required to match in arguments.
 
 ## Current Live Commands
@@ -30,7 +30,7 @@ Research Assistant is a general purpose discord bot made custom for the LabDAO d
 ### Ping 
 Ping checks the bot is responding and provides the current latency. 
 
-* \$\<ping\>:
+* ```\$\<ping\>:```
 
 
 ![](https://i.imgur.com/edjIAKD.png)
@@ -39,7 +39,7 @@ Ping checks the bot is responding and provides the current latency.
 
 Link return server relevant links in the form of a discord embed. 
 
-* \$\<link> [website name]
+* ```\$\<link> [website name]```
 * website name is unformatted text that must match one of the links provided in the screen shot to get a result. 
 * The Bot has a programmed error message if there is no match.
 
@@ -55,14 +55,16 @@ If an argument is provided, the bot returns the link of that type:
 
 At the moment, there are two single word commands that the bot will recognize. 
 
-\$github and \$twitter will return the links to the github and the twitter account respectively.
+```\$github``` and ```\$twitter``` will return the links to the github and the twitter account respectively.
 
 
 ### Poll 
  
 Poll creates an interactive embed based poll where users vote via emoji reacts. 
 
-* \$\<Poll> {"Question"} ["Option"]*(0->6)
+```
+\$\<Poll> {"Question"} ["Option"]*(0->6)
+```
 
 All arguments in this function must be contained in quotation marks for proper bot parsing, and are otherwise text strings.
 
@@ -76,7 +78,7 @@ Providing multiple arguments will insert those arguments into the poll and have 
 
 A help function that returns a list of current active functions. 
 
-* \<help\> [command] 
+```\<help\> [command]```
 
 Returns a message with a list of all the function names and function description subject to character limits.
 
@@ -89,21 +91,21 @@ The four digit descriminator after the # is not needed. Nicknames may not be rec
 Role title must also match exactly, including emojis if they are included. Copy-Paste Recomended.
 
 * Role (requires manage role permissions)
-    * \<Role\> {User} {Role}
+    * ```\<Role\> {User} {Role}```
         * Gives user role if they do not have it 
         * Removes role if the user has it. 
 
-* Ban\*\*
-    * \<Ban\> {User}
+* Ban
+    * ```\<Ban\> {User}```
     * Bans user
-* Hackban\*\*
-    * \<Hackban\> {User}
+* Hackban
+    * ```\<Hackban\> {User}```
     * Bans user without them needing to be in the server
-* Kick \*\*
-    * \<Kick\> {User}
+* Kick
+    * ```\<Kick\> {User}```
     * Removes a user from your server. 
-* Purge \*\*
-    * \<Purge\> {Integer}
+* Purge```
+    * ```\<Purge\> {Integer}```
     * Removes previous messages until {Integer} messages have been removed
 
 ## Backend Functions 
@@ -126,5 +128,5 @@ At the time these are programmed manually and upon request, but creating a disco
 
 * GM - Says a custom or random message once per day in the #gm channel. 
 * STATUS - Changes self status automatically after a set period of time. 
-* \<8ball\> {question}, the bot will answer your question as if it was a magic 8ball.
+* ```\<8ball\> {question}```, the bot will answer your question as if it was a magic 8ball.
 
