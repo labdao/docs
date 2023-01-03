@@ -1,5 +1,8 @@
-# Research Assistant Bot Documentation
-
+---
+title: Research Assistant Bot
+description: Research Assistant is a general purpose discord bot made custom for the LabDAO discord server.
+sidebar_position: 2
+---
 ## Introduction 
 
 Research Assistant is a general purpose discord bot made custom for the LabDAO discord server. The bot is in active development and new functions are consistently being added when new needs arise in the discord. Please comment on Github if you have an idea you believe improve this discord.
