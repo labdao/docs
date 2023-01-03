@@ -20,7 +20,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: 'About Us',
+      label: 'about-us',
       collapsed: false,
       items: [
         {
@@ -31,7 +31,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Mechanism',
+      label: 'mechanism',
       collapsed: false,
       items: [
         {
@@ -42,7 +42,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Tools',
+      label: 'tools',
       collapsed: false,
       items: [
         {
@@ -53,7 +53,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Community',
+      label: 'community',
       collapsed: false,
       items: [
         {
@@ -64,7 +64,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Projects',
+      label: 'projects',
       collapsed: false,
       items: [
         {
