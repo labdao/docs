@@ -24,9 +24,9 @@ Protocol Labs grants are best for projects that are aligned with Protocol Labsâ€
 * [Linguistic Informatics for Organizational Networks a.k.a. Project Lion](https://gitcoin.co/grants/7214/project-lion)
 * [Ocean monitoring](https://newatlantis.io/)
 
-# [Amazon Webservices](https://aws.amazon.com/grants/)
-The Amazon Web Services (AWS) Research Grants program supports researchers who are using cloud computing resources to advance their work in various fields.
+# [Amazon Webservices](https://aws.amazon.com/grants/) & [Google Cloud Platform](https://cloud.google.com/edu/researchers)
+Cloud Provider grants program supports researchers who are using cloud computing resources to advance their work in various fields.
 
-Amazon Web Service grants are best for projects that have a serious need for compute infrastructure and are willing to use AWS resources to support the research. Please make sure to use a .edu or .org email address, such as yourname@labdao.org, when applying for a research grant. Different from previous grants, cloud compute provider grants are emitted in the form of credits, and can not be used to cover other costs.
+These grants are best for projects that have a serious need for compute infrastructure and are willing to use centralised cloud resources to support their research. Please make sure to use a .edu or .org email address, such as yourname@labdao.org, when applying for these research grants. Different from previous grants, cloud compute provider grants are emitted in the form of credits, and can not be used to cover other costs.
 
 
