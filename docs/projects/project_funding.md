@@ -19,7 +19,7 @@ Gitcoin grants are best for projects that are reimagining the incentives, cultur
 * [Decentralized student team for iGEM competition](https://gitcoin.co/grants/7336/decentralized-student-team-for-igem-competition)
 
 # [Protocol Labs](https://grants.protocol.ai/) & [Filecoin Foundation](https://fil.org/grants/)
-![protocol_labs](https://user-images.githubusercontent.com/37750378/212125371-e9feef10-c8c1-4f8a-bf3b-1b4f9421ac2e.png)
+![protocollabs 1](https://user-images.githubusercontent.com/37750378/212144472-42dcc264-44b8-4979-aa82-2d990d562249.png)
 
 The Protocol Labs Research Grant Program aims to both support collaborative work on problems defined by the broader research community and drive progress on clearly scoped research projects critical to work at Protocol Labs.
 
