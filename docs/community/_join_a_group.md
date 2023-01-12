@@ -1,14 +1,9 @@
----
-title: Join a Lab
-description: How do I join a Lab?
-sidebar_position: 2
----
+
 ## How do I join a Lab?
 Currently, members looking for a lab will be able to browse a [table of existing labs](https://airtable.com/shrVkdy62K1qOxVng/tblya1qd60spyXRQw) and reach out to the team's initiator. 
 
 If you don’t see a lab working on the topic you’re interested in, it might be time to start a lab yourself. 
 
-## How do I start a Lab? 
 
 ### What Labs should exist?
 At LabDAO we are most excited about teams of scientists and engineers joining forces across institutional boundaries and sectors to build tools or do research together. Labs can form with different goals in mind - it might an open source tool, providing a physical laboratory service, publishing an article or starting a company. 
