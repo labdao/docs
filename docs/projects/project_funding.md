@@ -29,7 +29,7 @@ Protocol Labs grants are best for projects that are aligned with Protocol Labsâ€
 * [Ocean monitoring](https://newatlantis.io/)
 
 # [Amazon Webservices](https://aws.amazon.com/grants/) & [Google Cloud Platform](https://cloud.google.com/edu/researchers)
-![awsgc](https://user-images.githubusercontent.com/37750378/212143298-50b2555e-0961-4fce-9812-019504a3b5d1.png)
+![awsgc](https://user-images.githubusercontent.com/37750378/212143927-fdd94d87-d9c9-4290-9061-caa18a7c6725.png)
 
 Cloud Provider grants program supports researchers who are using cloud computing resources to advance their work in various fields.
 
