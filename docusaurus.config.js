@@ -15,7 +15,7 @@ const createConfig = async () => {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/LabDAO_Favicon_Teal.png',
     organizationName: 'labdao', // Usually your GitHub org/user name.
     projectName: 'docs', // Usually your repo name.
   
@@ -66,7 +66,7 @@ const createConfig = async () => {
           title: 'LabDAO',
           logo: {
             alt: 'LabDAO Logo',
-            src: 'img/labdao-icon.png',
+            src: 'img/labdaologo_brandmark_Teal.png',
           },
           items: [
             {
