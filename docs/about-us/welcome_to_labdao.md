@@ -5,7 +5,18 @@ sidebar_position: 1
 slug: /
 ---
 
-![openlab map](https://github.com/labdao/assets/blob/main/social/Twitter_Banner.png?raw=true)
+## Welcome
 
-# Welcome to LabDAO
-LabDAO is an online organisation of scientists and engineers coming together to share research tools. Our mission is to accelerate progress in the life sciences by making both computational and wet-lab tools accessible for scientist online.
+LabDAO is an online organisation of scientists and engineers coming together to make research tools more accessible and clinically relevant. 
+
+Our goal is to unlock progress in computational life sciences by breaking barriers caused by poor usability and niche expertise.
+
+In these docs, you can find: 
+
+- Containerized tools that you can install and run straight away
+- Curated, opinionated, and best-in-class pipelines
+- Step-by-step guides for tools we support
+
+Check out our first toolset for Affinity Binding (including docking, scoring, and simulation).
+
+Find out more about our tools on our [website](https://labdao.xyz/tools).
