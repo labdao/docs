@@ -1,9 +1,8 @@
 ---
-title: Predict Binding Affintiy
-sidebar_position: 5
+title: Tools
+sidebar_position: 2
 ---
 
-Machine Learning models can be used to predict the binding affinity of a small molecule and protein. At LabDAO we are focused on curating and maintaining the most effective tools to accelerate the drug discovery process. 
 
 ```
 Note: All models we provide are research-grade software and are provided "as-is". No model for this challenge has yet been demonstrated to generalise well enough to be an alternative to laboratory experiments. When providing a tool we make use of existing, often academic, contributions. Please give credit to the creators of open-source work. We are all standing on the shoulder of giants. 
