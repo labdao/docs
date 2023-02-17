@@ -39,7 +39,7 @@ Once you have your API key, you need to add it to the tool. To do this, type the
 export WEB3STORAGE_TOKEN=<your token here>
 ```
 
-Make sure to replace <your token here> with the actual API key you received.
+Make sure to replace ```<your token here>``` with the actual API key you received.
 
 ## 3. Download a set of custom files
 To test the tool, you need to download some example files. Here's how to do it:
