@@ -3,6 +3,8 @@ title: Introduction
 sidebar_position: 1
 ---
 
+![alt text](Group_45.png)
+
 ## What is small molecule binding affinity?
 Small molecule binding affinity describes the strength of the interaction between a small molecule and a target, often a protein. The binding affinity of a small molecule and a protein can be described with three related metrics, ΔG (binding free energy), Kd (dissociation constant), or the IC50 (half-maximal inhibitory concentration).
 
