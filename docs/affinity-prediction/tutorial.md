@@ -3,6 +3,8 @@ title: Tutorial
 sidebar_position: 4
 ---
 
+This tutorial is a more in depth installation guide. If you are familiar with the command line and have analysed biological data before, we recommend to use the [quickstart](https://docs.labdao.xyz/affinity-prediction/quickstart).
+
 ## 1. Install Plex
 In order to run LabDAO's tools you need to install the Plex client. This is a piece of code that will allow you to run tools, such as the binding affinity prediction tool, by requesting compute-time from members of the LabDAO network.
 
