@@ -1,43 +1,36 @@
 ---
-title: Tutorial
-sidebar_position: 4
+title: Installation
+sidebar_position: 1
 ---
 
 *Note: This tutorial is a step-by-step guide to installing Plex and running an affinity binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use our [quickstart guide](https://docs.labdao.xyz/affinity-prediction/quickstart).*
 
-This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can **run affinity binding tools** direct from your computer.
+This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can **run affinity prediction tools** directly from your computer.
 
 By the end of this tutorial, you will have:
 
-- Run an affinity binding tool (Equibind) on our provided test data (which includes a protein file and a small molecule file)
-- Visualized the results
+* Installed Plex
+* Run a docking tool (Equibind) on our provided test data, which includes a protein file and a small molecule file
+* Visualized the results
 
 Let’s get started!
 
-**Requirements:**
+## Requirements
 
 - No previous technical experience - we’ll walk through each step.
-- Request an API key from us:
-    - Please send us an [email](mailto:stewards@labdao.com) to get an API key.
-    - We’ll respond as quickly as we can. While you’re waiting, start the tutorial and download Plex (Step 1).
-    - If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. You’ll just need to copy and paste it - the tutorial shows you how.
+- An API token
 
-**Steps:**
-
-1. Install Plex
-2. Add an API key
-3. Run an example with our test data
+Please send us an [email](mailto:stewards@labdao.com) to get an API token. We’ll respond as quickly as we can. While you’re waiting, start the tutorial and download Plex (Step 1). If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. You’ll just need to copy and paste it - the tutorial shows you how.
 
 ## 1. Install Plex
 In order to run LabDAO's tools you need to install the LabDAO Plex client. 
 
-**What is Plex?**
-
-Plex is a piece of code that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
+### What is Plex
+Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
 
 Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
 
-When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up compute.
+When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
 
 ### Open your terminal
 To install Plex, first open up the Terminal application. The Terminal is a text-based method of using your computer.
@@ -45,7 +38,7 @@ To install Plex, first open up the Terminal application. The Terminal is a text-
 - On Mac: Go to “Spotlight Search” in the top right hand corner of your screen (it’s the magnifying glass icon). Type “terminal” and select the first option.
 - On Windows: To use on Windows, please send us [email](mailto:stewards@labdao.com) and we'll get you set up.
 
-*If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36), or work through a complete introduction with resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).*
+*If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36), or work through a complete introduction with excellent resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).*
 
 
 ### Type in the command
@@ -72,7 +65,7 @@ During the installation, you will be asked for your password. This is the passwo
 
 If the installation is successful, you will see a large LabDAO logo appear on your screen, and a confirmation that the Installation is complete. It should look something like this:
 
-![Screenshot 2023-02-20 at 10.51.08.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/aa84a7a5-5d9d-4a12-9cb2-edb1fb1f4d96/Screenshot_2023-02-20_at_10.51.08.png)
+![successfulinstallation](InstallationTutorial_Screenshot_of_successful_install_with_LabDAO_logo.png)
 
 ### Give Plex the right permissions
 After the installation is complete, you need to give Plex the permissions it needs to run. To do this, copy and paste the following command into your terminal and press **Enter**:
@@ -117,9 +110,10 @@ Copy and paste the following command to run the tool using our provided test dat
 
 You should see the following:
 
-![Screenshot 2023-02-20 at 16.56.18.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eb7ac07c-5cec-42c4-8ccd-ad7543b2fc6c/Screenshot_2023-02-20_at_16.56.18.png)
+![submitted](InstallationTutorial_Screenshot_with_submitting_and_receiving_job.png)
 
-*NOTE: You might get a pop-up asking “**Do you want the application “plex” to accept incoming network connections?”.** Click **“Allow”.*** 
+### Troubleshooting Job Submission
+You might get a pop-up asking *"Do you want the application “plex” to accept incoming network connections?”*. Click *“Allow”*.
 
 *If you need to, you can turn off your firewall. To do this on your Mac, go to settings via `System Preferences > Security & Privacy`. Then go to the Firewall tab, and click the padlock icon at the bottom of the window to make changes. Then click the “Turn off Firewall” button and try running the tool again.*
 
@@ -127,13 +121,13 @@ You should see the following:
 
 Once the job is complete and the results have downloaded, you will see the file path where your results can be found. It will look something like this: 
 
-![Screenshot 2023-02-20 at 16.58.09.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d4c3f0d5-a384-41da-beb0-eafe3080e28a/Screenshot_2023-02-20_at_16.58.09.png)
+![result.png](Installation_Tutorial_Screenshot_small_with_file_path_for_job_results.png)
 
 The view the results, open the folder where your results are stored. Type ```open``` into your command line, followed by the file path you were given as an output e.g. ```open /Users/user-demo-account/plex/8deeb1b6-d53f-44e4-8e0a-6d7be6f1c43d```
 
 This will show your results in Finder.
 
-![Screenshot 2023-02-20 at 17.01.52.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b5f0a1f7-87b9-4407-a70e-ba75a4aed230/Screenshot_2023-02-20_at_17.01.52.png)
+![InstallationTutorial_Screenshot_with_results_folder](InstallationTutorial_Screenshot_with_results_folder.png)
 
 ### Visualize the job results
 
@@ -145,26 +139,18 @@ In your results Finder window, click the “combined_results” folder, then the
 
 You should see:
 
-![Screenshot 2023-02-20 at 17.03.25.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5acbd355-cfa0-4e52-8cf8-42e5e8c8be24/Screenshot_2023-02-20_at_17.03.25.png)
+![InstallationTutorial_Screenshot_with_outputs](InstallationTutorial_Screenshot_with_outputs.png)
 
 To inspect the results interactively with a viewer, open [the Molstar visualizer in your web browser.](https://molstar.org/viewer/)
 
 Drag and drop **both the files** into the central blank frame in Molstar to see the result as per the gif below:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c6ac95b5-5729-494a-a486-fa778a07b698/Untitled.gif)
+![molstar_draganddrop](Gif_-_drag_and_drop_molstar.gif)
 
 Here is a close up what the result looks like in Molstar:
 
-![Screenshot 2023-02-20 at 17.10.20.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0d62f95a-1375-4ea9-8f1f-db7222be0add/Screenshot_2023-02-20_at_17.10.20.png)
+![molstar](InstallationTutorial_Screenshot_of_Molstar.png)
 
 You can see how tightly the small molecule is predicted to bind to the protein. For more on how to use the Molstar viewer, check out [the Molstar documentation](https://molstar.org/viewer-docs/).
 
 Congratulations, you’ve completed this tutorial! 
-
-**Coming soon** 
-
-Next, why not explore our other tutorials to:
-
-- Explore famous drug-protein interactions
-- Run these tools with your own data
-
