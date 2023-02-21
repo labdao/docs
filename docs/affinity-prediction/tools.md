@@ -8,7 +8,7 @@ sidebar_position: 2
 Note: All models we provide are research-grade software and are provided "as-is". No model for this challenge has yet been demonstrated to generalise well enough to be an alternative to laboratory experiments. When providing a tool we make use of existing, often academic, contributions. Please give credit to the creators of open-source work. We are all standing on the shoulder of giants. 
 ```
 
-![chart](https://user-images.githubusercontent.com/37750378/220336759-81073b5a-747c-4089-8a4e-eaffdfbd246a.png)
+![chart](https://user-images.githubusercontent.com/37750378/220346984-adf0eecb-dcf9-4212-af60-588c9fae672d.png)
 
 ## Diffdock+GNINA
 We are currently providing a Diffdock+GNINA model to the community, which uses Diffdock to generate a set of protein and small molecule 3D poses, and Gnina to predict a binding affinity estimate based on the poses coming from Diffdock.
