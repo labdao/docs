@@ -36,7 +36,7 @@ chmod +x ./plex
 
 It is expected that after pressing *Enter* on your keyboard, there won't be a notifcation in your terminal (aka *nothing* will happen).
 
-## 2. Add an API Key
+## 2. Add an API token
 Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
 
 ### Get your API token
