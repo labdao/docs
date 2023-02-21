@@ -28,13 +28,13 @@ It is expected that after pressing **Enter** on your keyboard, there will be a l
 During the installation, you will be asked for your password. This is the password you use to log in to your computer. When you type your password, you won't see any characters appear on the screen, but don't worry, the computer is still registering what you're typing.
 
 ### Give Plex the right permissions
-After the installation is complete, you need to give the Plex client the permissions it needs to run. To do this, type the following command into your terminal and press **Enter**:
+After the installation is complete, you need to give the Plex client the permissions it needs to run. To do this, type the following command into your terminal and press *Enter*:
 
 ```
 chmod +x ./plex
 ```
 
-It is expected that after pressing **Enter** on your keyboard, there won't be a notifcation in your terminal (aka *nothing* will happen).
+It is expected that after pressing *Enter* on your keyboard, there won't be a notifcation in your terminal (aka *nothing* will happen).
 
 ## 2. Add an API Key
 Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
