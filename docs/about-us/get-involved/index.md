@@ -4,8 +4,6 @@ description: There are many ways to get involved within LabDAO.
 sidebar_position: 3
 ---
 
-
-# Get involved
 Welcome to LabDAO! This is a simple process on how to become a meaningful contributor to LabDAO and the projects it is working on: 
 
 1. join our [Discord](https://discord.gg/labdao)  and introduce yourself in the #introductions channel.

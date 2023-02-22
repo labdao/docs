@@ -13,11 +13,6 @@ const sidebars = {
       label: 'Welcome',
     },
     {
-      type: 'doc',
-      id: 'affinity-binding/affinity-binding',
-      label: 'Affinity Binding',
-    },
-    {
       type: 'category',
       label: 'Affinity Prediction',
       collapsed: false,
