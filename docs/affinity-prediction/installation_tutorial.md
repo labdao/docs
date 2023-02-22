@@ -45,7 +45,7 @@ To install Plex, first open up the Terminal application. The Terminal is a text-
 Once you have your terminal open, you can download Plex by copy (*CMD+C*) and pasting (*CMD+V*) this command into your terminal:
 
 ```
-curl -sL https://raw.githubusercontent.com/labdao/ganglia/main/plex/install.sh -O
+curl -sSL https://raw.githubusercontent.com/labdao/plex/main/install.sh -O
 ```
 
 After you have pasted the command into the terminal, press **Enter** on your keyboard to download Plex.
