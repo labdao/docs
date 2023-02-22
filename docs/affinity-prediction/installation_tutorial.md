@@ -52,7 +52,7 @@ To install Plex, first open up the Terminal application. The Terminal is a text-
 Once you have your terminal open, you can download Plex by copy (*CMD+C*) and pasting (*CMD+V*) this command into your terminal:
 
 ```
-curl -sL https://raw.githubusercontent.com/labdao/ganglia/main/plex/install.sh -O
+curl -SL https://raw.githubusercontent.com/labdao/plex/main/install.sh -O
 ```
 
 After you have pasted the command into the terminal, press **Enter** on your keyboard to download Plex.
@@ -163,3 +163,4 @@ You can see how tightly the small molecule is predicted to bind to the protein.
 For more on how to use the Molstar viewer, check out [the Molstar documentation](https://molstar.org/viewer-docs/).
 
 ### Congratulations, you’ve downloaded Plex and run a docking tool!
+
