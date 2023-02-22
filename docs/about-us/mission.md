@@ -1,7 +1,7 @@
 ---
 title: Mission
 description: LabDAO's mission is to accelerate progress in the life sciences by making scientific tools more accessible
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # Mission

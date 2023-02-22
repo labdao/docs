@@ -1,6 +1,6 @@
 ---
 title: Tools
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 There is an overwhelming variety of tools that have been used to predict the binding affinity between a small molecule and a protein. We have gone through the literature and open source code repositories to provide a selection of tools that are ready for you to run them on PLEx. 
