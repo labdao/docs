@@ -1,7 +1,7 @@
 ---
 title: Contributor Guidelines
 description: Guidelines for LabDAO contributors.
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # Contributor Guidelines

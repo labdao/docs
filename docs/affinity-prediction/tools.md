@@ -1,9 +1,8 @@
 ---
 title: Tools
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-## Overview
 There is an overwhelming variety of tools that have been used to predict the binding affinity between a small molecule and a protein. We have gone through the literature and open source code repositories to provide a selection of tools that are ready for you to run them on PLEx. 
 
 **Note: All models we provide are research-grade software and are provided "as-is". No model for this task has yet been demonstrated to generalise well enough to be an alternative to laboratory experiments. When providing a tool we make use of existing, often academic, contributions. Please give credit to the creators of open-source work. We are standing on the shoulder of giants.**
@@ -11,6 +10,7 @@ There is an overwhelming variety of tools that have been used to predict the bin
 At this point in time we are focused on pose prediction. Stay tuned for integrated scoring functions.
 
 ## Small Molecule Binding Affinity Prediction
+In the chart below we give you an overview of the models available. We would generally recommend to optimise for a high model accuracy when predicting small molecule binding affinity.
 
 ![chart](https://user-images.githubusercontent.com/18559148/220592140-20600560-1d9d-4aae-80a0-642e09f9e065.png)
 
