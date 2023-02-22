@@ -1,7 +1,7 @@
 ---
 title: Welcome to LabDAO
 description: LabDAO gathers tools for life science research.
-sidebar_position: 1
+sidebar_label: Welcome
 slug: /
 ---
 

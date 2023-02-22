@@ -1,6 +1,6 @@
 ---
 title: Quickstart
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 To get started running the binding affinity prediction tool, first install the LabDAO client. Once installed, you can run the affinity prediction on your own data. 
