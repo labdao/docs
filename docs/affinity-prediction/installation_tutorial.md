@@ -1,6 +1,6 @@
 ---
-title: Installation
-sidebar_position: 1
+title: Tutorial
+sidebar_position: 3
 ---
 
 *Note: This tutorial is a step-by-step guide to installing Plex and running an affinity binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use our [quickstart guide](https://docs.labdao.xyz/affinity-prediction/quickstart).*
