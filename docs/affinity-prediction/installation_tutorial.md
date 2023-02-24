@@ -23,7 +23,7 @@ Let’s get started!
 **Requirements:**
 
 - No previous technical experience - we’ll walk through each step.
-- An API token: Please send us an [email](mailto:stewards@labdao.com) to get an API token. We’ll respond as quickly as we can. While you’re waiting, start the tutorial and download Plex (Step 1). 
+- An API token: Please send us an [email](mailto:niklas@labdao.com) to get an API token. We’ll respond as quickly as we can. While you’re waiting, start the tutorial and download Plex (Step 1). 
 
 *If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. Once you've obtained an API key, you can simply copy and paste it - the tutorial shows you how.*
 
@@ -43,7 +43,7 @@ In order to run LabDAO's tools you need to install the LabDAO Plex client.
 To install Plex, first open up the Terminal application. The Terminal is a text-based method of using your computer.
 
 - On Mac: Go to “Spotlight Search” in the top right hand corner of your screen (it’s the magnifying glass icon). Type “terminal” and select the first option.
-- On Windows: To use on Windows, please send us [email](mailto:stewards@labdao.com) and we'll get you set up.
+- On Windows: To use on Windows, please send us [email](mailto:niklas@labdao.com) and we'll get you set up.
 
 *If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36), or work through a complete introduction with excellent resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).*
 
@@ -87,7 +87,7 @@ It is expected that after pressing **Enter**, there will **NOT be a notificatio
 Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
 
 ### (i) Get your API token
-To get your API token, you need to contact us. You can do this by sending an us an [email](mailto:stewards@labdao.com). We will give you an API token to use.
+To get your API token, you need to contact us. You can do this by sending an us an [email](mailto:niklas@labdao.com). We will give you an API token to use.
 
 ### (ii) Add your API token
 Once you have your API token, you need to add it to the tool. To do this, type the following command into your terminal:
