@@ -23,7 +23,7 @@ Let’s get started!
 **Requirements:**
 
 - No previous technical experience - we’ll walk through each step.
-- An API token: Please send us an [email](mailto:stewards@labdao.com) to get an API token. We’ll respond as quickly as we can. While you’re waiting, start the tutorial and download Plex (Step 1). 
+- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in less than 3 mins. 
 
 *If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. Once you've obtained an API key, you can simply copy and paste it - the tutorial shows you how.*
 
@@ -32,12 +32,16 @@ Let’s get started!
 ## 1. Install Plex
 In order to run LabDAO's tools you need to install the LabDAO Plex client. 
 
-> ### What is Plex?
-> Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
->
-> Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
->
-> When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
+:::note
+
+What is Plex?
+Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
+
+Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
+
+When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
+
+:::
 
 ### (i) Open your terminal
 To install Plex, first open up the Terminal application. The Terminal is a text-based method of using your computer.
@@ -87,7 +91,7 @@ It is expected that after pressing **Enter**, there will **NOT be a notificatio
 Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
 
 ### (i) Get your API token
-To get your API token, you need to contact us. You can do this by sending an us an [email](mailto:stewards@labdao.com). We will give you an API token to use.
+Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get it in less than 3 mins.
 
 ### (ii) Add your API token
 Once you have your API token, you need to add it to the tool. To do this, type the following command into your terminal:
