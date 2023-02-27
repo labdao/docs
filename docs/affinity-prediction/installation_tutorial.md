@@ -3,14 +3,18 @@ title: Tutorial
 sidebar_position: 5
 ---
 
-*Note: This tutorial is a step-by-step guide to installing Plex and running an affinity binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use our [quickstart guide](https://docs.labdao.xyz/affinity-prediction/quickstart).*
+:::note
+
+This tutorial is a step-by-step guide to installing Plex and running an affinity binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use our [quickstart guide](https://docs.labdao.xyz/affinity-prediction/quickstart).
+
+:::
 
 This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can **run affinity prediction tools** directly from your computer.
 
 By the end of this tutorial, you will have:
 
 * Installed Plex
-* Run a docking tool (Equibind) on our provided test data, which includes a protein file and a small molecule file
+* Run a docking tool (Equibind) on our provided test data, which include a protein file and a small molecule file
 * Visualized the results
 
 Let’s get started!
@@ -23,7 +27,7 @@ Let’s get started!
 **Requirements:**
 
 - No previous technical experience - we’ll walk through each step.
-- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in less than 3 mins. 
+- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes. 
 
 *If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. Once you've obtained an API key, you can simply copy and paste it - the tutorial shows you how.*
 
@@ -34,7 +38,8 @@ In order to run LabDAO's tools you need to install the LabDAO Plex client.
 
 :::note
 
-What is Plex?
+**What is Plex?**
+
 Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
 
 Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
@@ -49,7 +54,11 @@ To install Plex, first open up the Terminal application. The Terminal is a text-
 - On Mac: Go to “Spotlight Search” in the top right hand corner of your screen (it’s the magnifying glass icon). Type “terminal” and select the first option.
 - On Windows: To use on Windows, please send us [email](mailto:stewards@labdao.com) and we'll get you set up.
 
-*If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36), or work through a complete introduction with excellent resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).*
+:::info
+
+If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36), or work through a complete introduction with excellent resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).
+
+:::
 
 
 ### (ii) Type in the installation commands
@@ -72,7 +81,11 @@ Press **Enter.** There will be a lot of information about the download and inst
 ### (iii) Enter your password during the installation
 During the installation, you will be asked for your password. This is the password you use to log in to your computer. Type your password and press **Enter.**
 
-**NOTE: When you type your password, you won't see any characters appear on the screen - but don't worry, the computer is still registering what you're typing.**
+:::tip
+
+NOTE: When you type your password, you won't see any characters appear on the screen - but don't worry, the computer is still registering what you're typing.
+
+:::
 
 If the installation is successful, you will see a large LabDAO logo appear on your screen, and a confirmation that the Installation is complete. It should look something like this:
 
@@ -91,7 +104,7 @@ It is expected that after pressing **Enter**, there will **NOT be a notificatio
 Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
 
 ### (i) Get your API token
-Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get it in less than 3 mins.
+Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get it in a few minutes.
 
 ### (ii) Add your API token
 Once you have your API token, you need to add it to the tool. To do this, type the following command into your terminal:
@@ -100,7 +113,11 @@ Once you have your API token, you need to add it to the tool. To do this, type t
 export WEB3STORAGE_TOKEN=<your token here>
 ```
 
-**NOTE: Make sure to replace ```<your token here>``` with the actual API token you received. There should be no ```<>``` symbols in the token e.g. ```export WEB3STORAGE_TOKEN=abcdefghijklmnopqrstuvwxyz123456789```**
+:::tip
+
+Make sure to replace ```<your token here>``` with the actual API token you received. There should be no ```<>``` symbols in the token e.g. ```export WEB3STORAGE_TOKEN=abcdefghijklmnopqrstuvwxyz123456789```
+
+:::
 
 It is expected that after pressing **Enter** on your keyboard, **there will NOT be a notification** in your terminal (i.e. *nothing will happen*).
 
@@ -123,10 +140,15 @@ You should see the following:
 
 ![submitted](InstallationTutorial_Screenshot_with_submitting_and_receiving_job.png)
 
->### Troubleshooting Job Submission
->You might get a pop-up asking *"Do you want the application “plex” to accept incoming network connections?”*. Click *“Allow”*.
-> 
->*If you need to, you can turn off your firewall. To do this on your Mac, go to settings via `System Preferences > Security & Privacy`. Then go to the Firewall tab, and click the padlock icon at the bottom of the window to make changes. Then click the “Turn off Firewall” button and try running the tool again.*
+:::caution
+
+**Troubleshooting Job Submission**
+
+You might get a pop-up asking *"Do you want the application “plex” to accept incoming network connections?”*. Click *“Allow”*.
+
+If you need to, you can turn off your firewall. To do this on your Mac, go to settings via `System Preferences > Security & Privacy`. Then go to the Firewall tab, and click the padlock icon at the bottom of the window to make changes. Then click the “Turn off Firewall” button and try running the tool again.
+
+:::
 
 ### (ii) Get the results
 
