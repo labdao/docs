@@ -65,18 +65,16 @@ If you want to learn more about the basics of using a terminal, check out these�
 Once you have your terminal open, you can download Plex by copy (*CMD+C*) and pasting (*CMD+V*) this command into your terminal:
 
 ```
-curl -SL https://raw.githubusercontent.com/labdao/plex/main/install.sh -O
+source <(curl -sSL https://raw.githubusercontent.com/labdao/plex/main/install.sh)
 ```
 
-After you have pasted the command into the terminal, press **Enter** on your keyboard to download Plex.
+After you have pasted the command into the terminal, press **Enter** on your keyboard to download and install Plex. 
 
-When the download is complete, install Plex by copy and pasting the command below:
+:::tip
 
-```
-source install.sh
-```
+A lot of information will print to the screen as the tool is installing. As a first time user, you can ignore this.
 
-Press **Enter.** There will be a lot of information about the download and installation of the tool. As a first time user, you can ignore this.
+:::
 
 ### (iii) Enter your password during the installation
 During the installation, you will be asked for your password. This is the password you use to log in to your computer. Type your password and press **Enter.**
