@@ -56,7 +56,9 @@ To install Plex, first open up the Terminal application. The Terminal is a text-
 
 :::info
 
-If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36), or work through a complete introduction with excellent resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).
+If you want to learn more about the basics of using a terminal, check out these [youtube tutorials](https://youtu.be/aKRYQsKR46I?t=36). 
+
+You can also work through a complete introduction with these excellent resources from [Software Carpentry](https://swcarpentry.github.io/shell-novice/01-intro/index.html).
 
 :::
 
@@ -96,7 +98,7 @@ After the installation is complete, you need to give Plex the permissions it nee
 chmod +x ./plex
 ```
 
-It is expected that after pressing **Enter**, there will **NOT be a notification** in your terminal (i.e. *nothing will happen*).
+It is expected that after pressing **Enter**, **there will NOT be a notification** in your terminal (i.e. *nothing will happen*).
 
 ## 2. Add an API token
 Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
@@ -105,7 +107,7 @@ Next, you need to add an API key to use Plex. An API key is a special code that 
 Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get it in a few minutes.
 
 ### (ii) Add your API token
-Once you have your API token, you need to add it to the tool. To do this, type the following command into your terminal:
+Once you have your API token, you need to add it to the tool. To do this, type the following command into your terminal and press **Enter**:
 
 ```
 export WEB3STORAGE_TOKEN=<your token here>
@@ -117,18 +119,16 @@ Make sure to replace ```<your token here>``` with the actual API token you rec
 
 :::
 
-It is expected that after pressing **Enter** on your keyboard, **there will NOT be a notification** in your terminal (i.e. *nothing will happen*).
+It is expected that after pressing **Enter**, **there will NOT be a notification** in your terminal (i.e. *nothing will happen*).
 
 ## 3. Run an example
 Now we will run a first tool using Plex.
 
-So that you can get started straight away, we have included an example protein file and small molecule file in the download. 
-
-Follow the steps below:
+So that you can get started straight away, we have included an example protein file and small molecule file in the download.
 
 ### (i) Submit a job
 
-Copy and paste the following command to run the tool using our provided test data:
+Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
 ./plex -app equibind -input-dir ./testdata -gpu false
@@ -152,7 +152,7 @@ Once the job is complete and the results have downloaded, you will see the file 
 
 ![result.png](Installation_Tutorial_Screenshot_small_with_file_path_for_job_results.png)
 
-To open the folder where your results are stored, type ```open``` into your command line, followed by the file path you were given as an output e.g. ```open /Users/user-demo-account/plex/8deeb1b6-d53f-44e4-8e0a-6d7be6f1c43d```
+To open the folder where your results are stored, type ```open``` into your command line, followed by the file path you were given as an output e.g. ```open /Users/user-demo-account/plex/8deeb1b6-d53f-44e4-8e0a-6d7be6f1c43d```.  Press **Enter**
 
 This will show your results in Finder.
 
