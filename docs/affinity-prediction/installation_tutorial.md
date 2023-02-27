@@ -83,7 +83,7 @@ During the installation, you will be asked for your password. This is the passwo
 
 :::tip
 
-NOTE: When you type your password, you won't see any characters appear on the screen - but don't worry, the computer is still registering what you're typing.
+When you type your password, you won't see any characters appear on the screen - but don't worry, the computer is still registering what you're typing.
 
 :::
 
@@ -115,7 +115,7 @@ export WEB3STORAGE_TOKEN=<your token here>
 
 :::tip
 
-Make sure to replace ```<your token here>``` with the actual API token you received. There should be no ```<>``` symbols in the token e.g. ```export WEB3STORAGE_TOKEN=abcdefghijklmnopqrstuvwxyz123456789```
+Make sure to replace ```<your token here>``` with the actual API token you received. There should be no ```<>``` symbols in the token - e.g.: ```export WEB3STORAGE_TOKEN=abcdefghijklmnopqrstuvwxyz123456789```
 
 :::
 
@@ -140,13 +140,11 @@ You should see the following:
 
 ![submitted](InstallationTutorial_Screenshot_with_submitting_and_receiving_job.png)
 
-:::caution
+:::tip
 
-**Troubleshooting Job Submission**
+You might get a pop-up asking *"Do you want the application “plex” to accept incoming network connections?”*. Click ***“Allow”***.
 
-You might get a pop-up asking *"Do you want the application “plex” to accept incoming network connections?”*. Click *“Allow”*.
-
-If you need to, you can turn off your firewall. To do this on your Mac, go to settings via `System Preferences > Security & Privacy`. Then go to the Firewall tab, and click the padlock icon at the bottom of the window to make changes. Then click the “Turn off Firewall” button and try running the tool again.
+If you need to, you can turn off your firewall. To do this on your Mac, go to settings via `System Preferences > Security & Privacy`. Then go to the Firewall tab, and click the padlock icon at the bottom of the window to make changes. Click the “Turn off Firewall” button and try running the tool again.
 
 :::
 
