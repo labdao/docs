@@ -9,14 +9,14 @@ This is a quickstart guide to installing Plex and running an example job. If you
 
 :::
 
-To get started, the first step is to install the LabDAO client, Plex. Then you can run the affinity prediction on your own data.
+To get started, the first step is to install the LabDAO client, Plex. Then you can run the affinity prediction tools on your own data.
 
 ---
 **Time required:**
 - Less than 5 minutes
 
 **Requirements**
-- Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically.
+- Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically so you can get started now.
 
 ---
 ## 1. Install Plex
