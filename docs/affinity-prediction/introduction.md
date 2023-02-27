@@ -15,9 +15,4 @@ Generally, ΔG is considered the most generalisable metric to describe binding a
 
 ## Predicting Binding Affinity
 
-Machine Learning models can be used to predict the binding affinity of a small molecule and protein. At LabDAO we are focused on curating and maintaining the most effective tools to accelerate the drug discovery process. 
-
-````
-#TODO 
-a molecular representation of the small molecule and protein on the left side, and the output values on the right side. In the middle would be an method or a model. 
-````
+Machine Learning models can be used to predict the binding affinity of a small molecule and protein. At LabDAO we are focused on curating and maintaining the most effective tools to accelerate the drug discovery process. You can browse the available [tools](https://docs.labdao.xyz/affinity-prediction/tools) and run a [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial) to get started.
