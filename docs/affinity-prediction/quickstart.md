@@ -16,7 +16,7 @@ To get started, the first step is to install the LabDAO client, Plex. Then you c
 - Less than 5 minutes
 
 **Requirements**
-- Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes.
+- Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically.
 
 ---
 ## 1. Install Plex
@@ -52,8 +52,7 @@ Once the job has run, you can inspect the results interactively in a job-specifi
 To see how to visualize the results with Molstar, [check out section 3 of our tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial#visualize-the-job-results).
 
 :::tip
-**Troubleshooting**
-
 If you have any problems, check out the more detailed walkthrough in our [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial).
+
 If you're still running into difficulties, [send us an email](mailto:stewards@labdao.com) and we'll help you out.
 :::
