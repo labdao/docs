@@ -3,7 +3,11 @@ title: Quickstart
 sidebar_position: 4
 ---
 
-*This is a quickstart guide to installing Plex and running an example job. If you'd like a step-by-step walkthrough of this process, try our [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial)*.
+:::note
+
+This is a quickstart guide to installing Plex and running an example job. If you'd like a step-by-step walkthrough of this process, try our [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial).
+
+:::
 
 To get started, the first step is to install the LabDAO client, Plex. Then you can run the affinity prediction on your own data.
 
@@ -12,7 +16,7 @@ To get started, the first step is to install the LabDAO client, Plex. Then you c
 - Less than 5 minutes
 
 **Requirements**
-- [Email us](mailto:stewards@labdao.com) to get an API key
+- Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes.
 
 ---
 ## 1. Install Plex
@@ -30,7 +34,7 @@ chmod +x ./plex
 ```
 
 ## 2. Add an API Token
-For the beta version of the tool, you will need an API token to use the tool effectively. Please [email us to get a token](mailto:stewards@labdao.com).
+For the beta version of the tool, you will need an API token to use the tool effectively. Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf).
 
 You can add the API token like this: 
 ```
@@ -47,8 +51,9 @@ Once the job has run, you can inspect the results interactively in a job-specifi
 
 To see how to visualize the results with Molstar, [check out section 3 of our tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial#visualize-the-job-results).
 
----
+:::tip
+**Troubleshooting**
 
->## Troubleshooting
->If you have any problems, check out the more detailed walkthrough in our [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial).
->If you're still running into difficulties, [send us an email](mailto:stewards@labdao.com) and we'll help you out.
+If you have any problems, check out the more detailed walkthrough in our [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial).
+If you're still running into difficulties, [send us an email](mailto:stewards@labdao.com) and we'll help you out.
+:::
