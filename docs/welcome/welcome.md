@@ -5,26 +5,30 @@ sidebar_label: Welcome
 slug: /
 ---
 
-## LabDAO intro and goals
+## LabDAO Mission
 
-LabDAO is an online organisation of scientists and engineers. 
+LabDAO is an online organisation of scientists and engineers. Our goal is to make BioML tools more accessible and clinically relevant, to empower scientific inventors globally.
 
-Our goal is to make BioML tools more accessible and clinically relevant. 
+We want to live in a world where you can unleash your scientific potential, regardless of your age, career stage, background or existing organizational resources. For this to happen, a key step is to make the tools easier to use and understand, so more people can experiment and invent. 
 
-We aim to unlock progress in the field, by breaking down barriers caused by poor usability and niche expertise.
+TL;DR: We want to live in a world in which students drop out of school because they have developed a therapeutic candidate from their laptop, not yet another instant checkout app.
 
 
 ## In the docs
 
 We believe you shouldn't have to spend days researching and setting up BioML tools.
 
-Our Plex client can be installed with 1 line of code. Plex allows you to run BioML tools direct from your command line, without having to worry about failing dependencies or managing compute.
-
 In these docs, you can find:
 
-- Curated, best-in-class pipelines
+- Curated, best-in-class pipelines for key drug discovery tasks e.g. Affinity Prediction
 - Containerized tools that you can install and run straight away
 - Step-by-step guides for the tools we support
+
+:::note
+
+We make these tools easy to use with our Plex client. Plex manages all the dependencies, drivers, and installations that these tools require, so you can run them straight away without set-up headaches. You can install Plex with 1 line of code.
+
+:::
 
 ## What to do next
 
