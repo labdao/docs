@@ -28,7 +28,7 @@ In these docs, you can find:
 
 ## What to do next
 
-- Check out our first toolset for [Small Molcule Binding Affinity Prediction](https://docs.labdao.xyz/affinity-prediction). 
+- Check out our first toolset for [Small Molcule Binding Affinity Prediction](https://docs.labdao.xyz/affinity-prediction/introduction). 
 This includes a workflow for docking small molecules & proteins, and for visualizing the results. **You can install Plex, run an example model, and visualize the results in less than 5 mins!**
 
 - Find out more about our tools on our [website](https://labdao.xyz/tools).
