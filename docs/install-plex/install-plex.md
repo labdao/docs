@@ -6,21 +6,19 @@ slug: /
 ---
 
 
+This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can run BioML tools easily, directly from your computer.
+
 :::note
 
-This tutorial is a step-by-step guide to running an affinity binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use the [quickstart guide](https://docs.labdao.xyz/affinity-prediction/quickstart).
+**What is Plex?**
+
+Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
+
+Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
+
+When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
 
 :::
-
-This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can **run affinity prediction tools** directly from your computer.
-
-By the end of this tutorial, you will have:
-
-* Installed Plex
-* Run a docking tool (Equibind) on our provided test data, which include a protein file and a small molecule file
-* Visualized the results
-
-Let’s get started!
 
 ---
 
@@ -37,19 +35,6 @@ Let’s get started!
 ---
 
 ## 1. Install Plex
-In order to run LabDAO's tools you need to install the LabDAO Plex client. 
-
-:::note
-
-**What is Plex?**
-
-Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
-
-Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
-
-When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
-
-:::
 
 ### (i) Open your terminal
 To install Plex, first open up the Terminal application. The Terminal is a text-based method of using your computer.
@@ -123,3 +108,11 @@ Make sure to replace ```<your token here>``` with the actual API token you rec
 :::
 
 It is expected that after pressing **Enter**, **there will NOT be a notification** in your terminal (i.e. *nothing will happen*).
+
+**You're now ready to run a tool!**
+
+## Next steps: Run a tool to check Plex is working as expected
+
+* Try this quick-run [small molecule docking tool](https://docs.labdao.xyz/affinity-prediction/run_an_example). 
+* It's a fast algorithm, so you can run a job and visualise results in 3-5 minutes.
+
