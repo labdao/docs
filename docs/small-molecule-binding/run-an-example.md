@@ -1,15 +1,15 @@
 ---
-title: Tutorial
+title: Run an example
 sidebar_position: 5
 ---
 
 :::note
 
-This tutorial is a step-by-step guide to running an affinity binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use the [quickstart guide](https://docs.labdao.xyz/affinity-prediction/quickstart).
+This tutorial is a step-by-step guide to running a small molecule binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use the [quickstart guide](https://docs.labdao.xyz/small-molecule-binding/quickstart).
 
 :::
 
-This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can **run affinity prediction tools** directly from your computer.
+This tutorial will guide you through the steps required to run a small molecule binding tool directly from your computer.
 
 By the end of this tutorial, you will have:
 
@@ -25,19 +25,21 @@ Let’s get started!
 
 **Requirements:**
 
-- PLEx is installed.
+- Install PLEX ([installation guide here](https://docs.labdao.xyz/install-plex))
+- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes.
 - No previous technical experience - we’ll walk through each step.
-- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes. 
 
 *If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. Once you've obtained an API key, you can simply copy and paste it - the tutorial shows you how.*
 
 ---
 
-In this tutorial we will run an affinity prediction task using Plex.
+In this tutorial we will run a small molecule binding task using PLEX.
 
-So that you can get started straight away, we have included an example protein file and small molecule file when you installed PLEx.
+So that you can get started straight away, we included an example protein file and small molecule file when you installed PLEX.
 
-### (i) Submit a job
+After [installing PLEX](https://docs.labdao.xyz/install-plex), follow the steps below:
+
+### 1. Submit a job
 
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
@@ -57,7 +59,7 @@ If you need to, you can turn off your firewall. To do this on your Mac, go to se
 
 :::
 
-### (ii) Get the results
+### 2. Get the results
 
 Once the job is complete and the results have downloaded, you will see the file path where your results can be found. It will look something like this: 
 
@@ -69,7 +71,7 @@ This will show your results in Finder.
 
 ![InstallationTutorial_Screenshot_with_results_folder](InstallationTutorial_Screenshot_with_results_folder.png)
 
-### (iii) Visualize the job results
+### 3. Visualize the job results
 
 To visualize the results, we are going to use Molstar.
 
@@ -95,5 +97,5 @@ You can see how tightly the small molecule is predicted to bind to the protein.
 
 For more on how to use the Molstar viewer, check out [the Molstar documentation](https://molstar.org/viewer-docs/).
 
-### Congratulations, you’ve downloaded Plex and run a docking tool!
+### Congratulations, you’ve downloaded PLEX and run a docking tool!
 

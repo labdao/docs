@@ -18,7 +18,7 @@ We aim to unlock progress in the field, by breaking down barriers caused by poor
 
 We believe you shouldn't have to spend days researching and setting up BioML tools.
 
-Our Plex client can be installed with 1 line of code. Plex allows you to run BioML tools direct from your command line, without having to worry about failing dependencies or managing compute.
+Our PLEX client can be installed with 1 line of code. PLEX allows you to run BioML tools direct from your command line, without having to worry about failing dependencies or managing compute.
 
 In these docs, you can find:
 
@@ -28,8 +28,8 @@ In these docs, you can find:
 
 ## What to do next
 
-- Check out our first toolset for [Small Molcule Binding Affinity Prediction](https://docs.labdao.xyz/affinity-prediction/introduction). 
-This includes a workflow for docking small molecules & proteins, and for visualizing the results. **You can install Plex, run an example model, and visualize the results in less than 5 mins!**
+- Check out our first toolset for [Small Molcule Binding Affinity Prediction](https://docs.labdao.xyz/small-molecule-binding/overview). 
+This includes a workflow for docking small molecules & proteins, and for visualizing the results. **You can install PLEX, run an example model, and visualize the results in less than 5 mins!**
 
 - Find out more about our tools on our [website](https://labdao.xyz/tools).
 
