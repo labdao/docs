@@ -1,24 +1,26 @@
 ---
-title: Install PLEx
-description: How to install LabDAO's PLEx client
-sidebar_label: Install PLEx
+title: Install PLEX
+description: How to install LabDAO's PLEX client
+sidebar_label: Install PLEX
 slug: /
 ---
 
 
-This tutorial will guide you through the steps required to set up Plex, the LabDAO client, so you can run BioML tools easily, directly from your computer.
+This tutorial will guide you through the steps required to set up PLEX, so you can easily run BioML tools from your computer's command line.
 
 :::note
 
-**What is Plex?**
+**What is PLEX?**
 
-Plex is a piece of software that will allow you to run tools, such as the *binding affinity prediction tool*, by using simple commands from your computer. 
+PLEX is a piece of software that will allow you to run tools, such as the *small molecule binding tools*, by using simple commands from your computer. 
 
-Plex manages all the required dependencies and installations, to make the tools as easy to run as possible. 
+PLEX manages all the required dependencies and installations, to make the tools as easy to run as possible. 
 
-When you run a tool, Plex requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
+When you run a tool, PLEX requests compute-time from members of the LabDAO network, so you don’t have to worry about hardware requirements or setting up the neccesary compute infrastructure.
 
 :::
+
+Let's get started!
 
 ---
 
@@ -34,10 +36,10 @@ When you run a tool, Plex requests compute-time from members of the LabDAO netwo
 
 ---
 
-## 1. Install Plex
+## 1. Install PLEX
 
 ### (i) Open your terminal
-To install Plex, first open up the Terminal application. The Terminal is a text-based method of using your computer.
+To install PLEX, first open up the Terminal application. The Terminal is a text-based method of using your computer.
 
 - On Mac: Go to “Spotlight Search” in the top right hand corner of your screen (it’s the magnifying glass icon). Type “terminal” and select the first option.
 - On Windows: To use on Windows, please send us [email](mailto:stewards@labdao.com) and we'll get you set up.
@@ -52,13 +54,13 @@ You can also work through a complete introduction with these excellent resources
 
 
 ### (ii) Type in the installation commands
-Once you have your terminal open, you can download Plex by copy (*CMD+C*) and pasting (*CMD+V*) this command into your terminal:
+Once you have your terminal open, you can download PLEX by copy (*CMD+C*) and pasting (*CMD+V*) this command into your terminal:
 
 ```
-source <(curl -sSL https://raw.githubusercontent.com/labdao/plex/main/install.sh)
+source <(curl -sSL https://raw.githubusercontent.com/labdao/PLEX/main/install.sh)
 ```
 
-After you have pasted the command into the terminal, press **Enter** on your keyboard to download and install Plex. 
+After you have pasted the command into the terminal, press **Enter** on your keyboard to download and install PLEX. 
 
 :::tip
 
@@ -79,17 +81,17 @@ If the installation is successful, you will see a large LabDAO logo appear on yo
 
 ![successfulinstallation](InstallationTutorial_Screenshot_of_successful_install_with_LabDAO_logo.png)
 
-### (iv) Give Plex the right permissions
-After the installation is complete, you need to give Plex the permissions it needs to run. To do this, copy and paste the following command into your terminal and press **Enter**:
+### (iv) Give PLEX the right permissions
+After the installation is complete, you need to give PLEX the permissions it needs to run. To do this, copy and paste the following command into your terminal and press **Enter**:
 
 ```
-chmod +x ./plex
+chmod +x ./PLEX
 ```
 
 It is expected that after pressing **Enter**, **there will NOT be a notification** in your terminal (i.e. *nothing will happen*).
 
 ## 2. Add an API token
-Next, you need to add an API key to use Plex. An API key is a special code that allows the tool to communicate with other programs on the internet.
+Next, you need to add an API key to use PLEX. An API key is a special code that allows the tool to communicate with other programs on the internet.
 
 ### (i) Get your API token
 Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get it in a few minutes.
@@ -111,8 +113,8 @@ It is expected that after pressing **Enter**, **there will NOT be a notificatio
 
 **You're now ready to run a tool!**
 
-## Next steps: Run a tool to check Plex is working as expected
+## Next steps: Run a tool to check PLEX is working as expected
 
-* Try this quick-run [small molecule docking tool](https://docs.labdao.xyz/affinity-prediction/run_an_example). 
+* Try this quick-run [small molecule binding tool](https://docs.labdao.xyz/small-molecule-binding/run_an_example). 
 * It's a fast algorithm, so you can run a job and visualise results in 3-5 minutes.
 
