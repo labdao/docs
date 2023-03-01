@@ -18,9 +18,9 @@ We have put together a **curated, best-in-class toolset** for small molecule bin
 
 In the Small Molecule Binding Toolset, you can find:
 
-* [An introduction to small molecule binding and affinity prediction (What are they? Why should you determine binding affinity? How do you measure it?)](https://docs.labdao.xyz/small-molecule-binding/Introduction-to-small-molecule-binding)
-* [An overview of the tools we provide for small molecule binding (including docking and scoring)](https://docs.labdao.xyz/small-molecule-binding/tools)
-* [A step-by-step example of running the tool and visualizing the results](https://docs.labdao.xyz/small-molecule-binding/run-an-example)
+* [An introduction to small molecule binding and affinity prediction (What are they? Why should you determine binding affinity? How do you measure it?)](/small-molecule-binding/introduction-to-small-molecule-binding)
+* [An overview of the tools we provide for small molecule binding (including docking and scoring)](/small-molecule-binding/tools)
+* [A step-by-step example of running the tool and visualizing the results](/small-molecule-binding/run-an-example)
 
 Here is an overview of the package:
 

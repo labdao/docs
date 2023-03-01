@@ -2,7 +2,6 @@
 title: Install PLEX
 description: How to install LabDAO's PLEX client
 sidebar_label: Install PLEX
-slug: /
 ---
 
 

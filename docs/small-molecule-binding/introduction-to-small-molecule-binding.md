@@ -1,5 +1,5 @@
 ---
-title: Introduction to Affinity Prediction
+title: Introduction to Small Molecule Binding
 sidebar_position: 2
 ---
 
