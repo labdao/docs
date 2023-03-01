@@ -13,6 +13,11 @@ const sidebars = {
       label: 'Welcome',
     },
     {
+      type: 'doc',
+      id: 'install-plex/install-plex',
+      label: 'Install PLEx',
+    },
+    {
       type: 'category',
       label: 'Affinity Prediction',
       collapsed: false,
