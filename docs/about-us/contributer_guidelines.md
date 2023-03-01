@@ -1,6 +1,6 @@
 ---
-title: Contributor Guidelines
-description: Guidelines for LabDAO contributors.
+title: Contributor Policy
+description: Guideline for LabDAO contributors.
 sidebar_position: 2
 ---
 
