@@ -4,7 +4,7 @@ description: Guideline for LabDAO contributors.
 sidebar_position: 2
 ---
 
-When applying to a bounty within LabDAO, for example through a platform such as [DeWork](https://app.dework.xyz/labdao), you -referred to as Bounty Hunter- enter a **Bounty Agreement** with the following terms described below.
+When applying to a bounty within LabDAO, for example through a platform that contains a **Task Description**, such as [DeWork](https://app.dework.xyz/labdao), you -referred to as Bounty Hunter- enter a **Bounty Agreement** with the following terms described below.
 
 :::caution
 
@@ -14,13 +14,13 @@ LabDAO can only transfer funds to Bounty Hunters that are sending an invoice mes
 
 ## Bounty Agreement
 
-* **Participation**: Bounty Hunter has agreed to participate in the Bounty Program and complete the Task described in Appendix I in return for a Bounty Payment (the “Bounty Payment”).
-* **Bounty Payment**: LabDAO agrees to pay Bounty Hunter a Bounty Payment as described in Appendix I and in accordance with the terms of this Policy **upon submission of an invoice** by the Bounty Hunter.
+* **Participation**: Bounty Hunter has agreed to participate in the Bounty Program and complete the Task described in the Task Description in return for a Bounty Payment (the “Bounty Payment”).
+* **Bounty Payment**: LabDAO agrees to pay Bounty Hunter a Bounty Payment as described in the Task Description and in accordance with the terms of this Policy **upon submission of an invoice** by the Bounty Hunter.
 * **Rights**: The Bounty Payment amount shall be paid at the discretion of LabDAO according to the performance of the task as described above. At any time LabDAO reserves the right to adjust the Bounty Payment amount or cancel the payment for any reason.
-* **Reporting**: The Bounty Hunter agrees to provide a detailed report of the work developed to LabDAO upon completion in accordance with the requirements stated in Appendix I.
+* **Reporting**: The Bounty Hunter agrees to provide a detailed report of the work developed to LabDAO upon completion in accordance with the requirements stated in the Task Description.
 * **Contributor Policy**: Bounty Hunter agrees to comply with LabDAO Contributor Policy. The breach of any of the Contributor Policy by the Bounty Hunter will immediately determine the termination of the present Agreement and the cancellation of any payment to the Bounty Hunter.
-* **Privacy Policy and Data Processing Policy**: Bounty Hunter agrees to comply with LabDAO Privacy Policy and LabDAO’s internal guidelines regarding data processing, according to the data processing agreement in Appendix II.
-* **Non-Disclosure**: Bounty Hunter agrees to keep the Bounty Task details described in Appendix I confidential, if not stated otherwise, and will not disclose such information to any third party without the prior written consent of LabDAO.
+* **Privacy Policy and Data Processing Policy**: Bounty Hunter agrees to comply with LabDAO Privacy Policy and LabDAO’s internal guidelines regarding data processing, according to any additionally provided data processing agreement.
+* **Non-Disclosure**: Bounty Hunter agrees to keep the Bounty Task details described in the Task Description confidential, if not stated otherwise, and will not disclose such information to any third party without the prior written consent of LabDAO.
 * **Relationship between the Parties**: The Parties enter into this Agreement as independent Parties. Nothing in this Agreement shall in any circumstances be interpreted or construed as creating any type of relationship between the Parties, including, but not limited to an employment relationship. The Bounty Hunter is not allowed to represent, or make any professional or other reference to LabDAO, without prior written consent from LabDAO.  
 * **No Waiver**: The failure of either party to enforce any provision of this Agreement shall not be construed as a waiver of such provision or the right to enforce it.
 * **Governing Law**: This Agreement shall be governed by and construed in accordance with the laws of Switzerland, and the Canton of Zug, without regard to its conflicts of law provisions.
