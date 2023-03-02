@@ -93,7 +93,7 @@ It is expected that after pressing **Enter**, **there will NOT be a notificatio
 Next, you need to add an API key to use PLEX. An API key is a special code that allows the tool to communicate with other programs on the internet.
 
 ### (i) Get your API token
-Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get it in a few minutes.
+Get your API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). You will recieve your toke via eamil within in a few minutes.
 
 ### (ii) Add your API token
 Once you have your API token, you need to add it to the tool. To do this, type the following command into your terminal and press **Enter**:
@@ -114,6 +114,6 @@ It is expected that after pressing **Enter**, **there will NOT be a notificatio
 
 ## Next steps: Run a tool to check PLEX is working as expected
 
-* Try this quick-run [small molecule binding tool](https://docs.labdao.xyz/small-molecule-binding/run_an_example). 
+* Try this quick-run [small molecule binding tool](https://docs.labdao.xyz/small-molecule-binding/run-an-example). 
 * It's a fast algorithm, so you can run a job and visualise results in 3-5 minutes.
 
