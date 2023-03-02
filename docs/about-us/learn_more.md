@@ -1,7 +1,7 @@
 ---
 title: Learn More
 description: Learn more by browsing our information.
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 

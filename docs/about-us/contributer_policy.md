@@ -1,7 +1,7 @@
 ---
 title: Contributor Policy
 description: Guideline for LabDAO contributors.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Contributor Guidelines
@@ -9,12 +9,6 @@ sidebar_position: 2
 1. we encourage focused and deep collaboration among our community members
 2. we are committed to working in the open and asynchronously where possible. This means we prefer text over audio and github over discord.
 3. we respect eachother's time and are present with the group when attending a meeting.
-
-## Pull Request Process
-1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 
 ## Community Charter
 Open scientific tools and services are a public good. To maintain the free exchange of tools and services we strive to make our community adhere to the following articles: 
