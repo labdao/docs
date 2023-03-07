@@ -45,7 +45,7 @@ export WEB3STORAGE_TOKEN=<your token here>
 Once the client is installed and you have provided an API token, you can run the following command in the newly-created plex folder to run a container with our provided data:
 
 ```
-./plex -app equibind -input-dir ./testdata/pdbbind_processed_size1/
+./plex -app equibind -input-dir ./testdata/binding/pdbbind_processed_size1/
 ```
 Once the job has run, you can inspect the results interactively in a job-specific directory that is displayed by the client, for example ```/Users/your-name/plex/bb24bb4d-647f-487e-a1b6-16646a227318```.
 
