@@ -23,6 +23,9 @@ At this point in time we are focused on docking. Stay tuned for integrated scori
 Stärk, H., Ganea, O.-E., Pattanaik, L., Barzilay, R., & Jaakkola, T. (2022). EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction. http://arxiv.org/abs/2202.05146
 :::
 
+````
+./plex -app equibind -input-dir testdata/binding/abl
+````
 
 
 ## Base: Gnina (Coming Soon)
