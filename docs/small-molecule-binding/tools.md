@@ -35,6 +35,10 @@ A McNutt, P Francoeur, R Aggarwal, T Masuda, R Meli, M Ragoza, J Sunseri, DR Koe
 ## Standard: Diffdock
 [Diffdock](https://github.com/gcorso/DiffDock) is a machine learning-based docking tool. Diffdock is reportedly faster and more accurate than existing baseline tools.
 
+````
+./plex -app diffdock -input-dir testdata/binding/abl -gpu=true -network=true
+````
+
 :::note
 Corso, G., Stärk, H., Jing, B., Barzilay, R., & Jaakkola, T. (2022). DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking. http://arxiv.org/abs/2210.01776
 :::
