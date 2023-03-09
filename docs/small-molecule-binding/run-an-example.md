@@ -36,7 +36,7 @@ Copy and paste the following command to run the tool using our provided test dat
 
 You should see the following:
 
-![submitted](screenshot-jobrunning.png)
+![submitted](screenshot-Jobrunning.png)
 
 :::tip
 
