@@ -25,7 +25,7 @@ The small molecule binding affinity should be determined before moving forward w
 
 Machine Learning models can be used to predict the binding affinity of a small molecule and protein. 
 
-At LabDAO we are focused on curating and maintaining the most effective tools to accelerate the drug discovery process. You can browse the available [tools](../small-molecule-binding/tools.md) and run a [tutorial](../small-molecule-binding/run-an-example.md) to get started.
+At LabDAO we are focused on curating and maintaining the most effective tools to accelerate the drug discovery process. You can browse the available [tools](https://docs.labdao.xyz/affinity-prediction/tools) and run a [tutorial](https://docs.labdao.xyz/affinity-prediction/installation_tutorial) to get started.
 
 When predicting binding affinity using LabDAO's computational tools, the process is as follows:
 

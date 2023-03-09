@@ -1,7 +1,13 @@
 ---
 title: Run an example
-sidebar_position: 4
+sidebar_position: 5
 ---
+
+:::note
+
+This tutorial is a step-by-step guide to running a small molecule binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use the [quickstart guide](https://docs.labdao.xyz/small-molecule-binding/quickstart).
+
+:::
 
 This tutorial will guide you through the steps required to run a small molecule binding tool directly from your computer.
 
@@ -19,24 +25,31 @@ Let’s get started!
 
 **Requirements:**
 
-- Install PLEX ([installation guide here](../getting-started/install-plex.md))
+- Install PLEX ([installation guide here](https://docs.labdao.xyz/install-plex))
+- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes.
 - No previous technical experience - we’ll walk through each step.
+
+*If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. Once you've obtained an API key, you can simply copy and paste it - the tutorial shows you how.*
 
 ---
 
-After [installing PLEX](../getting-started/install-plex.md), follow the steps below:
+In this tutorial we will run a small molecule binding task using PLEX.
+
+So that you can get started straight away, we included an example protein file and small molecule file when you installed PLEX.
+
+After [installing PLEX](https://docs.labdao.xyz/install-plex), follow the steps below:
 
 ### 1. Submit a job
 
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
-./plex -app equibind -input-dir ./testdata/binding/pdbbind_processed_size1/
+./plex -app equibind -input-dir ./testdata -gpu false
 ```
 
 You should see the following:
 
-![submitted](screenshot-jobrunning.png)
+![submitted](InstallationTutorial_Screenshot_with_submitting_and_receiving_job.png)
 
 :::tip
 
@@ -50,9 +63,9 @@ If you need to, you can turn off your firewall. To do this on your Mac, go to se
 
 Once the job is complete and the results have downloaded, you will see the file path where your results can be found. It will look something like this: 
 
-![result.png](screenshot-resultsdownloaded.png)
+![result.png](Installation_Tutorial_Screenshot_small_with_file_path_for_job_results.png)
 
-To open the folder where your results are stored, type ```open ``` into your command line, followed by the file path you were given as an output e.g. ```open /Users/user-demo-account/plex/bd5c4751-0a7a-42bd-a92d-6a1a0758a6a3```.  Press **Enter**
+To open the folder where your results are stored, type ```open``` into your command line, followed by the file path you were given as an output e.g. ```open /Users/user-demo-account/plex/8deeb1b6-d53f-44e4-8e0a-6d7be6f1c43d```.  Press **Enter**
 
 This will show your results in Finder.
 
