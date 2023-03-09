@@ -1,6 +1,6 @@
 # LabDAO Docs
 
-This repository powers [`docs.labdao.com`](https://docs.labdao.com). It pulls together all LabDAO/OpenLab documentation together into a single site using [Docusaurus](https://docusaurus.io/).
+This repository powers [`docs.labdao.xyz`](https://docs.labdao.xyz). It pulls together all LabDAO/OpenLab documentation together into a single site using [Docusaurus](https://docusaurus.io/).
 
 ### Writing documentation
 
