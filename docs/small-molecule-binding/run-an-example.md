@@ -1,11 +1,11 @@
 ---
 title: Run an example
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 :::note
 
-This tutorial is a step-by-step guide to running a small molecule binding tool for the first time. If you are familiar with using the command line and have analysed biological data before, you may wish to use the [quickstart guide](https://docs.labdao.xyz/small-molecule-binding/quickstart).
+This tutorial is a step-by-step guide to running a small molecule binding tool for the first time.
 
 :::
 
@@ -25,11 +25,8 @@ Let’s get started!
 
 **Requirements:**
 
-- Install PLEX ([installation guide here](https://docs.labdao.xyz/install-plex))
-- An API token: Request an API token [here](https://whe68a12b61.typeform.com/to/PpbO2HYf). We'll email you one automatically, so you should get one in a few minutes.
+- Install PLEX ([installation guide here](../getting-started/install-plex.md))
 - No previous technical experience - we’ll walk through each step.
-
-*If you haven’t used an API key before, don’t worry. It’s just a string of characters that acts like a password. Once you've obtained an API key, you can simply copy and paste it - the tutorial shows you how.*
 
 ---
 
@@ -37,14 +34,14 @@ In this tutorial we will run a small molecule binding task using PLEX.
 
 So that you can get started straight away, we included an example protein file and small molecule file when you installed PLEX.
 
-After [installing PLEX](https://docs.labdao.xyz/install-plex), follow the steps below:
+After [installing PLEX](../getting-started/install-plex.md), follow the steps below:
 
 ### 1. Submit a job
 
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
-./plex -app equibind -input-dir ./testdata -gpu false
+./plex -app equibind -input-dir ./testdata/binding/pdbbind_processed_size1/
 ```
 
 You should see the following:
