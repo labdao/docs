@@ -9,7 +9,7 @@ Since the release of Alphafold there has been a variety of related models releas
 All models we provide are research-grade software and are provided "as-is". We make use of existing, often academic, contributions. Please give credit to the creators of open-source work. **We are standing on the shoulder of giants.**
 :::
 
-:::warning
+:::info
 We have prepared a set of configurations for you that we list below. We are working on ways to have more control over individual parameters.
 :::
 
