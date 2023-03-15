@@ -1,6 +1,6 @@
 ---
 title: Tools
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 Since the release of Alphafold there has been a variety of related models released for protein folding. We have gone through the literature and open source code repositories to provide a selection of tools that are ready for you to run on PLEX. 
