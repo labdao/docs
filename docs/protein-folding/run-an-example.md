@@ -1,6 +1,6 @@
 ---
 title: Run an example
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 This tutorial will guide you through the steps required to run a protein folding tool (Colabfold) directly from your computer.
