@@ -62,3 +62,4 @@ The "large" configuration runs just like the standard configuration, but include
 Mirdita M, Schütze K, Moriwaki Y, Heo L, Ovchinnikov S and Steinegger M. ColabFold: Making protein folding accessible to all.
 Nature Methods (2022) doi: 10.1038/s41592-022-01488-1
 :::
+
