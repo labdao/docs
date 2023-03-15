@@ -6,7 +6,7 @@ sidebar_position: 3
 There is an overwhelming variety of tools that have been used to predict the binding affinity between a small molecule and a protein. We have gone through the literature and open source code repositories to provide a selection of tools that are ready for you to run on PLEX. 
 
 :::note
-All models we provide are research-grade software and are provided "as-is". No model for this task has yet been demonstrated to generalise well enough to be an alternative to laboratory experiments. We make use of existing, often academic, contributions. Please give credit to the creators of open-source work. We are standing on the shoulder of giants.
+All models we provide are research-grade software and are provided "as-is". No model for this task has yet been demonstrated to generalise well enough to be an alternative to laboratory experiments. We make use of existing, often academic, contributions. Please give credit to the creators of open-source work. **We are standing on the shoulder of giants.**
 :::
 
 :::warning
@@ -19,13 +19,13 @@ At this point in time we are focused on docking. Stay tuned for integrated scori
 ## Mini: Equibind
 [Equibind](https://github.com/HannesStark/EquiBind) is a very fast, machine learning-based docking tool. The model is less accurate than baseline methods, but orders of magnitude faster.
 
-:::note
-Stärk, H., Ganea, O.-E., Pattanaik, L., Barzilay, R., & Jaakkola, T. (2022). EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction. http://arxiv.org/abs/2202.05146
-:::
-
 ````
 ./plex -app equibind -input-dir testdata/binding/abl
 ````
+
+:::note
+Stärk, H., Ganea, O.-E., Pattanaik, L., Barzilay, R., & Jaakkola, T. (2022). EquiBind: Geometric Deep Learning for Drug Binding Structure Prediction. http://arxiv.org/abs/2202.05146
+:::
 
 
 ## Base: Gnina (Coming Soon)
