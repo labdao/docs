@@ -103,7 +103,7 @@ For Equibind, run the command below, changing the input directory to match where
 For Diffdock, run the command below, changing the input directory to match where your data is stored:
 
 ```
-./plex -app diffdock -input-dir ~/downloads/plexbindingdata
+./plex -app diffdock -input-dir ~/downloads/plexbindingdata -gpu=true -network=true
 ```
 
 ## 5. Visualize the results
