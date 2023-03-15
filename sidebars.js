@@ -33,7 +33,7 @@ const sidebars = {
       label: 'Protein Folding',
       collapsed: true,
       items: [
-        'protein-folding/overview',
+        // 'protein-folding/overview',
         'protein-folding/tools',
         'protein-folding/run-an-example',
       ]
