@@ -30,6 +30,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Protein Folding',
+      collapsed: true,
+      items: [
+        'protein-folding/overview',
+        'protein-folding/tools',
+        'protein-folding/run-an-example',
+      ]
+    },
+    {
+      type: 'category',
       label: 'About Us',
       collapsed: true,
       items: [
