@@ -46,6 +46,6 @@ Our goal is to make BioML tools more accessible and clinically relevant.
 
 We aim to unlock progress in the field, by breaking down barriers caused by poor usability and niche expertise.
 
-You can learn more in the [About Us section](../about-us/mission.md)
+You can learn more in the [About Us section](../about-us/mission.md).
 
 
