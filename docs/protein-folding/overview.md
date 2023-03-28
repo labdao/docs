@@ -3,11 +3,9 @@ title: Overview
 sidebar_position: 1
 ---
 ## What is Protein Folding?
-Protein folding is a process, whereby a protein's chain of amino acids is "folded" into a 3D structure.
+Protein folding is the process of using a protein's chain of amino acids to predict or "fold" its 3D structure.
 
-The structure of a protein affects its function. The structure determines which channels, receptors, and binding sites are exposed - thus affecting how the protein interacts with other proteins and molecules. 
-
-Predicting the 3D structure for a given protein is an important task in modern drug discovery. It helps scientists to:
+The structure of a protein determines its function. As a consequence, predicting the 3D structure for a given protein is an important task in modern drug discovery. It helps scientists to:
 
 * Understand a particular protein, which may have been identified as a possible drug target.
 * Explore potential medicines that might bind to the protein (e.g. by performing [small molecule binding](https://docs.labdao.xyz/small-molecule-binding/overview) experiments).
