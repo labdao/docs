@@ -26,7 +26,7 @@ In these docs, you can find:
 - [Install PLEX here with 1 line of code.](/getting-started/install-plex)
 
 
-- Run a tool - check out our [Small Molecule Binding](../small-molecule-binding/overview) or Protein Folding toolsets. For example, our small molecule binding toolset includes a workflow for docking small molecules & proteins, and for visualizing the results. **You can install PLEX, run an example model, and visualize the results in less than 5 mins!**
+- Run a tool - check out our [Small Molecule Binding](../small-molecule-binding/overview) or [Protein Folding](../protein-folding/overview) toolsets. For example, our small molecule binding toolset includes a workflow for docking small molecules & proteins, and for visualizing the results. **You can install PLEX, run an example model, and visualize the results in less than 5 mins!**
 
 - Find out more about our tools on our [website](https://labdao.xyz/tools).
 
@@ -46,6 +46,6 @@ Our goal is to make BioML tools more accessible and clinically relevant.
 
 We aim to unlock progress in the field, by breaking down barriers caused by poor usability and niche expertise.
 
-You can learn more in the [About Us section](../about-us/mission.md)
+You can learn more in the [About Us](../about-us/mission.md) section.
 
 
