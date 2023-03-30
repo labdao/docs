@@ -26,19 +26,6 @@ Mirdita M, Schütze K, Moriwaki Y, Heo L, Ovchinnikov S and Steinegger M. ColabF
 Nature Methods (2022) doi: 10.1038/s41592-022-01488-1
 :::
 
-
-## Base: Colabfold
-The "base" configuration runs a shallow MSA, performs one recycling and uses available templates to make a prediction. It runs this prediction 5 times with different randomness seeds. This is best used if you want to predict a protein structure very fast and draw from a distribution of potential conformational substates. 
-
-````
-./plex -app colabfold-base -input-dir testdata/folding -gpu=true -network=true
-````
-
-:::note
-Mirdita M, Schütze K, Moriwaki Y, Heo L, Ovchinnikov S and Steinegger M. ColabFold: Making protein folding accessible to all.
-Nature Methods (2022) doi: 10.1038/s41592-022-01488-1
-:::
-
 ## Standard: Colabfold
 The "standard" configuration runs a full MSA, performs three recycling rounds and uses available templates to make a prediction. It runs this prediction 5 times with different randomness seeds. This is best used if you want to predict a state of the art structure and draw from a distribution of potential conformational substates.
 
