@@ -86,6 +86,12 @@ const createConfig = async () => {
             },
           ],
         },
+        algolia: {
+          appId: 'I8J1DZKSGR',
+          apiKey: 'd78d134e15f8f366b04ee89599fe233a',
+          indexName: 'labdao',
+          debug: false,
+        },
         footer: {
           style: 'dark',
           copyright: `Copyright © ${new Date().getFullYear()} LabDAO.`,

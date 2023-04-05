@@ -5,6 +5,10 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/* Import Algolia DocSearch CSS */
+@import url('https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css');
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
