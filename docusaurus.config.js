@@ -71,18 +71,8 @@ const createConfig = async () => {
           items: [
             {
               href: 'https://github.com/labdao/docs',
-              label: 'GitHub',
               position: 'right',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/labdao',
-              position: 'right',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/lab_dao',
-              position: 'right',
+              className: 'header-github-link',
             },
           ],
         },
@@ -94,6 +84,39 @@ const createConfig = async () => {
         },
         footer: {
           style: 'dark',
+          links: [
+            {
+              title: "Community",
+              items: [
+                {
+                  label: "LabDAO.xyz",
+                  href: "https://labdao.xyz/community",
+                },
+                {
+                  label: "Discord",
+                  href: "https://discordapp.com/invite/labdao",
+                },
+              ]
+            },
+            {
+              title: "Develop/Contribute",
+              items: [
+                {
+                  label: "GitHub",
+                  href: "https://github.com/labdao",
+                }
+              ],
+            },
+            {
+              title: "Socials",
+              items: [
+                {
+                  label: "Twitter",
+                  href: "https://twitter.com/lab_dao",
+                },
+              ],
+            },
+          ],
           copyright: `Copyright © ${new Date().getFullYear()} LabDAO.`,
         },
         prism: {
