@@ -40,6 +40,14 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Get Involved',
+      items: [
+        'get-involved/ways-to-get-involved',
+        'get-involved/how-to-contribute-a-tool',
+      ]
+    },
+    {
+      type: 'category',
       label: 'About Us',
       collapsed: true,
       items: [
