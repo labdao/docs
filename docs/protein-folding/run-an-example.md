@@ -31,7 +31,7 @@ After [installing PLEX](../getting-started/install-plex.md), follow the steps be
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
-./plex -app colabfold-mini -input-dir testdata/folding -gpu=true -network=true
+./plex -tool colabfold-mini -input-dir testdata/folding -gpu=true -network=true
 ```
 
 You should see the following:

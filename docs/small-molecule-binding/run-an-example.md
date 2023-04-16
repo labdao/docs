@@ -31,10 +31,12 @@ After [installing PLEX](../getting-started/install-plex.md), follow the steps be
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
-./plex -app equibind -input-dir ./testdata/binding/pdbbind_processed_size1/
+./plex -tool equibind -input-dir ./testdata/binding/pdbbind_processed_size1/
 ```
 
 You should see the following:
+
+<!-- NOTE: The following screenshot needs to be updated when ToolToBacalhau is ready -->
 
 ![submitted](screenshot-Jobrunning.png)
 

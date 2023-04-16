@@ -33,7 +33,7 @@ The steps to run a small molecule binding tool with PLEX on your own data are as
 2. Run the command, pointing to this folder as the input directory:
 
 ```
-./plex -app equibind -input-dir ~/downloads/plexbindingdata
+./plex -tool equibind -input-dir ~/downloads/plexbindingdata
 ```
 
 :::note
