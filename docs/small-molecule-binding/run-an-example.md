@@ -5,8 +5,6 @@ sidebar_position: 4
 
 import AsciinemaPlayer from '../../src/components/AsciinemaPlayer.js';
 
-const playerRef = useRef(null);
-
 This tutorial will guide you through the steps required to run a small molecule binding tool directly from your computer.
 
 By the end of this tutorial, you will have:
@@ -35,22 +33,22 @@ After [installing PLEX](../getting-started/install-plex.md), follow the steps be
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
-./plex -tool equibind -input-dir ./testdata/binding/pdbbind_processed_size1/
+./plex -tool equibind -input-dir ./testdata/binding/abl/
 ```
 
 You should see the following:
 
-<AsciinemaPlayer 
-    src="/terminal-recordings/small-molecule-binding-run-an-example.cast"
-    rows={20}
-    idleTimeLimit={3}
-    preload={true}
-    autoPlay={true}
-    loop={false}
-    speed={2.5}
-/>
-
-<!-- ![submitted](screenshot-Jobrunning.png) -->
+<div style={{ marginBottom: '20px' }}>
+    <AsciinemaPlayer 
+        src="/terminal-recordings/small-molecule-binding-run-an-example.cast"
+        rows={20}
+        idleTimeLimit={3}
+        preload={true}
+        autoPlay={true}
+        loop={false}
+        speed={2.5}
+    />
+</div>
 
 :::tip
 
