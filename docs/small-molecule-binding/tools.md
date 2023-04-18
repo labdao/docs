@@ -20,7 +20,7 @@ At this point in time we are focused on docking. Stay tuned for integrated scori
 [Equibind](https://github.com/HannesStark/EquiBind) is a very fast, machine learning-based docking tool. The model is less accurate than baseline methods, but orders of magnitude faster.
 
 ````
-./plex -app equibind -input-dir testdata/binding/abl
+./plex -tool equibind -input-dir testdata/binding/abl
 ````
 
 :::note
@@ -39,7 +39,7 @@ A McNutt, P Francoeur, R Aggarwal, T Masuda, R Meli, M Ragoza, J Sunseri, DR Koe
 [Diffdock](https://github.com/gcorso/DiffDock) is a machine learning-based docking tool. Diffdock is reportedly faster and more accurate than existing baseline tools.
 
 ````
-./plex -app diffdock -input-dir testdata/binding/abl -gpu=true -network=true
+./plex -tool diffdock -input-dir testdata/binding/abl
 ````
 
 :::note

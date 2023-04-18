@@ -6,7 +6,7 @@ sidebar_position: 2
 ## What is small molecule binding affinity?
 Small molecule binding affinity describes the strength of the interaction between a small molecule and a target, often a protein. 
 
-## Why determine the binding affintiy? 
+## Why determine the binding affinity? 
 A strong binding affinity increases the probability that the clinical effect of the drug candidate is due to its interaction with the target, rather than with other structures in the organism. 
 
 Determining the binding affinity of a drug candidate helps you to:
