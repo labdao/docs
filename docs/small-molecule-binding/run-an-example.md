@@ -3,6 +3,10 @@ title: Run an example
 sidebar_position: 4
 ---
 
+import AsciinemaPlayer from '../../src/components/AsciinemaPlayer.js';
+
+const playerRef = useRef(null);
+
 This tutorial will guide you through the steps required to run a small molecule binding tool directly from your computer.
 
 By the end of this tutorial, you will have:
@@ -36,7 +40,17 @@ Copy and paste the following command to run the tool using our provided test dat
 
 You should see the following:
 
-![submitted](screenshot-Jobrunning.png)
+<AsciinemaPlayer 
+    src="/terminal-recordings/small-molecule-binding-run-an-example.cast"
+    rows={20}
+    idleTimeLimit={3}
+    preload={true}
+    autoPlay={true}
+    loop={false}
+    speed={2.5}
+/>
+
+<!-- ![submitted](screenshot-Jobrunning.png) -->
 
 :::tip
 
