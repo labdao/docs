@@ -97,13 +97,13 @@ Now we're ready to run PLEX for small molecule binding.
 For Equibind, run the command below, changing the input directory to match where your data is stored.
 
 ```
-./plex -app equibind -input-dir ~/downloads/plexbindingdata
+./plex -tool equibind -input-dir ~/downloads/plexbindingdata
 ```
 
 For Diffdock, run the command below, changing the input directory to match where your data is stored:
 
 ```
-./plex -app diffdock -input-dir ~/downloads/plexbindingdata -gpu=true -network=true
+./plex -tool diffdock -input-dir ~/downloads/plexbindingdata -gpu=true -network=true
 ```
 
 ## 5. Visualize the results
