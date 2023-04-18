@@ -33,7 +33,7 @@ for cmd in "${commands[@]}"; do
   chmod +x "$typed_cmd_script"
 
   # Start the recording, execute the command, and then exit the shell
-  asciinema rec -c "bash $typed_cmd_script" -t "$filename" -y -i 2 --overwrite
+  asciinema rec -c "bash $typed_cmd_script" $filename -y -i 2 --overwrite 
 
   # Cleanup the temporary script
   rm -f "$typed_cmd_script"
