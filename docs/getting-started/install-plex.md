@@ -4,6 +4,7 @@ description: How to install LabDAO's PLEX client
 sidebar_label: Getting Started
 ---
 
+import AsciinemaPlayer from '../../src/components/AsciinemaPlayer.js';
 
 This tutorial will guide you through the steps required to set up PLEX, so you can easily run BioML tools from your computer's command line.
 
@@ -52,7 +53,15 @@ After you have pasted the command into the terminal, press **Enter** on your ke
 
 If the installation is successful, you will see a large LabDAO logo appear on your screen, and a confirmation that the Installation is complete. It should look something like this:
 
-![successfulinstallation](successful-install-15mar23.png)
+<AsciinemaPlayer 
+    src="/terminal-recordings/install-plex.cast"
+    rows={30}
+    idleTimeLimit={3}
+    preload={true}
+    autoPlay={true}
+    loop={false}
+    speed={1.5}
+/>
 
 ### 3. Give PLEX the right permissions
 After the installation is complete, you need to give PLEX the permissions it needs to run. To do this, copy and paste the following command into your terminal and press **Enter**:
