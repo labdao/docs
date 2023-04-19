@@ -14,8 +14,6 @@ At this point in time we are focused on docking. Stay tuned for integrated scori
 :::
 
 
-![chart](https://user-images.githubusercontent.com/18559148/220592140-20600560-1d9d-4aae-80a0-642e09f9e065.png)
-
 ## Mini: Equibind
 [Equibind](https://github.com/HannesStark/EquiBind) is a very fast, machine learning-based docking tool. The model is less accurate than baseline methods, but orders of magnitude faster.
 
