@@ -3,6 +3,8 @@ title: Run an example
 sidebar_position: 3
 ---
 
+import AsciinemaPlayer from '../../src/components/AsciinemaPlayer.js';
+
 This tutorial will guide you through the steps required to run a protein folding tool (Colabfold) directly from your computer.
 
 By the end of this tutorial, you will have:
@@ -31,12 +33,22 @@ After [installing PLEX](../getting-started/install-plex.md), follow the steps be
 Copy and paste the following command to run the tool using our provided test data and press **Enter**:
 
 ```
-./plex -app colabfold-mini -input-dir testdata/folding -gpu=true -network=true
+./plex -tool colabfold-mini -input-dir testdata/folding
 ```
 
 You should see the following:
 
-![submitted](protein-folding-job-running-14mar23.png)
+<div style={{ marginBottom: '20px' }}>
+    <AsciinemaPlayer 
+        src="/terminal-recordings/colabfold-mini.cast"
+        rows={30}
+        idleTimeLimit={3}
+        preload={true}
+        autoPlay={true}
+        loop={false}
+        speed={5}
+    />
+</div>
 
 :::tip
 
