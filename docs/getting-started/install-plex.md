@@ -2,6 +2,7 @@
 title: Install PLEX
 description: How to install LabDAO's PLEX client
 sidebar_label: Getting Started
+sidebar_position: 1
 ---
 
 import AsciinemaPlayer from '../../src/components/AsciinemaPlayer.js';
