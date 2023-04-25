@@ -260,73 +260,66 @@ Line 4: mv [Optional. Include if you want to rename output files to make them se
 
 Below, we share sections from the original Github README for 2 tools, and then show what the PLEX arguments look like.
 
-<details>
-  <summary>Gnina</summary>
-  <div>
-    <div><br>The Gnina readme (https://github.com/gnina/gnina) contains the key arguments we need.
-<br><br>It says:<br><br>
+### Gnina
 
-> To dock ligand `lig.sdf` to a binding site on `rec.pdb` defined by another ligand `orig.sdf`:
->
->`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf -o docked.sdf.gz`
->
->To perform docking with flexible sidechain residues within 3.5 Angstroms of `orig.sdf` (generally not recommend unless prior knowledge indicates pocket is highly flexible):
->
->`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf --flexdist_ligand orig.sdf --flexdist 3.5 -o flex_docked.sdf.gz`
->
->To perform whole protein docking:
->
->```
->gnina -r rec.pdb -l lig.sdf --autobox_ligand rec.pdb -o whole_docked.sdf.gz --exhaustiveness 64
->
->```
+The Gnina [readme](https://github.com/gnina/gnina) contains the key arguments we need.
+
+It says:
+
+To dock ligand `lig.sdf` to a binding site on `rec.pdb` defined by another ligand `orig.sdf`:
+
+`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf -o docked.sdf.gz`
+
+To perform docking with flexible sidechain residues within 3.5 Angstroms of `orig.sdf` (generally not recommend unless prior knowledge indicates pocket is highly flexible):
+
+`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf --flexdist_ligand orig.sdf --flexdist 3.5 -o flex_docked.sdf.gz`
+
+To perform whole protein docking:
+
+```
+gnina -r rec.pdb -l lig.sdf --autobox_ligand rec.pdb -o whole_docked.sdf.gz --exhaustiveness 64
+```
 
 This becomes the following PLEX argument for whole protein docking:
 
-```jsx
+```
 "baseCommand": ["/bin/bash", "-c"],
     "arguments": [
       "gnina -r $(inputs.protein.path) -l $(inputs.small_molecule.path) --exhaustiveness $(inputs.exhaustiveness) --autobox_ligand $(inputs.protein.path) --cnn_scoring $(inputs.cnn_scoring) -o /outputs/$(inputs.protein.nameroot)_$(inputs.small_molecule.nameroot)_docked_scored.sdf",
     ]
 ```
-</div>
-  </div>
-</details>
 
-<details>
-  <summary>Diffdock</summary>
-  <div>
-    <div>
-<br>
-The Diffdock readme (https://github.com/gcorso/DiffDock) contains the information we need.<br><br>
-It says:<br><br>
+### Diffdock
 
-> For a single complex: specify the protein with, e.g., `--protein_path protein.pdb`
- and the ligand with `--ligand ligand.sdf`
- or `--ligand "COc(cc1)ccc1C#N"`
-> 
->
-> We will soon also provide weights of a trained model without ESM2 embeddings such that this step is not necessary. Luckily, it is rather easy. First prepare a fasta for ESM2 (for a single protein use `--protein_path protein.pdb` instead):
-> 
->
->`python datasets/esm_embedding_preparation.py --protein_ligand_csv data/protein_ligand_example_csv.csv --out_file data/prepared_for_esm.fasta`
->
-> Generate the embeddings with ESM2 (assuming that you are in the DiffDock directory):
-> 
->
->`git clone https://github.com/facebookresearch/esm
->cd esm
->pip install -e .
->cd ..
->HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D data/prepared_for_esm.fasta data/esm2_output --repr_layers 33 --include per_tok`
->
->And done, that is it!
->
-> Run inference
-> 
->
->`python -m inference --protein_ligand_csv data/protein_ligand_example_csv.csv --out_dir results/user_predictions_small --inference_steps 15 --samples_per_complex 10 --batch_size 10 --actual_steps 18 --no_final_step_noise`
->
+The Diffdock [readme](https://github.com/gcorso/DiffDock) contains the information we need.
+It says:
+
+For a single complex: specify the protein with, e.g., `--protein_path protein.pdb`
+and the ligand with `--ligand ligand.sdf`
+or `--ligand "COc(cc1)ccc1C#N"`
+ 
+
+We will soon also provide weights of a trained model without ESM2 embeddings such that this step is not necessary. Luckily, it is rather easy. First prepare a fasta for ESM2 (for a single protein use `--protein_path protein.pdb` instead):
+ 
+
+`python datasets/esm_embedding_preparation.py --protein_ligand_csv data/protein_ligand_example_csv.csv --out_file data/prepared_for_esm.fasta`
+
+Generate the embeddings with ESM2 (assuming that you are in the DiffDock directory):
+ 
+
+`git clone https://github.com/facebookresearch/esm
+cd esm
+pip install -e .
+cd ..
+HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D data/prepared_for_esm.fasta data/esm2_output --repr_layers 33 --include per_tok`
+
+And done, that is it!
+
+Run inference
+ 
+
+`python -m inference --protein_ligand_csv data/protein_ligand_example_csv.csv --out_dir results/user_predictions_small --inference_steps 15 --samples_per_complex 10 --batch_size 10 --actual_steps 18 --no_final_step_noise`
+
 Note that the standard baseCommand makes it clear that the arguments are generic bash commands.
 
 To convert this into PLEX arguments, we look through the readme and see the different steps. We convert these into 4 lines of code that do the following:
@@ -338,7 +331,7 @@ To convert this into PLEX arguments, we look through the readme and see the diff
 
 The PLEX arguments are as follows:
 
-```jsx
+```
 "baseCommand": ["/bin/bash", "-c"],
     "arguments": [
       "python datasets/esm_embedding_preparation.py --protein_path $(inputs.protein.filepath) --out_file /outputs/prepared_for_esm.fasta;",
@@ -347,9 +340,6 @@ The PLEX arguments are as follows:
       "cp $(inputs.protein.filepath) /outputs"
     ]
 ```
-</div>
-  </div>
-</details>
 
 # Step 4: Specify container
 
@@ -381,7 +371,7 @@ sha256:931809f6cc0ac3c43f9d09ddef0a7a03d0085e58a4aa50cf79c24fb708d58bae
 You can now construct the docker reference to follow the pattern ````author/tool@sha256:````
 For example:
 
-```jsx
+```
 "dockerPull": "gnina/gnina@sha256:931809f6cc0ac3c43f9d09ddef0a7a03d0085e58a4aa50cf79c24fb708d58bae",
 ```
 
@@ -413,7 +403,7 @@ When you have assessed these requirements, add them to the config.
 
 Below is an example for Colabfold, which requires a GPU and web access to run queries against the MMSeq2 database:
 
-```jsx
+```
 ...
 "gpuBool": true,
 "networkBool": true,
