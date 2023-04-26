@@ -23,24 +23,24 @@ By contributing a tool to PLEX, you’ll be part of an open-source community of 
 
 **Requirements:**
 
-- Aaccess to a Docker container of the tool you want to contribute (if you have the raw tool that you want to wrap in a container, [send us an email](stewards@labdao.com)).
+- Access to a Docker container of the tool you want to contribute (if you have the raw tool that you want to wrap in a container, [send us an email](mailto:stewards@labdao.com)).
 - Comfortable with Docker and Docker files
 - Experience using Conda
 - Basic understanding of working with Pytorch and Cuda as dependencies
 - RECOMMENDATION: Make sure you’ve managed to get the tool running from the command line on your own machine first, then do the PLEX config.
     - This familiarity will make it easier to structure the set-up on PLEX.
-    - If you want to contribute a tool but don't have access to a GPU, please [send us an email](stewards@labdao.com) and we can help.
+    - If you want to contribute a tool but don't have access to a GPU, please [send us an email](mailto:stewards@labdao.com) and we can help.
 
 **Time required:**
 
-About 1 hour of deep work. The first time you do it, it may take longer - but it gets easier the more you do!
+About 1.5 hours of deep work. The first time you do it, it may take longer - but it gets easier the more you do!
 
 Note: right now we only support Command Line Arguments to run tools. We are planning to add native python support soon.
 
 ---
 # Step-by-step guide
 
-# Step 0: Familiarise yourself with the tool configurations in PLEX
+## Step 0: Familiarise yourself with the tool configurations in PLEX
 
 To make scientific tools easily accessible, we take inspiration from the Common Workflow Language (CWL) standard. 
 
@@ -50,7 +50,7 @@ To make scientific tools easily accessible, we take inspiration from the Common 
 
 - CWL is a simple standard to define scientific workflows as chains of operations in YAML and JSON. No fancy domain-specific language.
 - CWL is powering many genomics projects and sits at the core of a lot of other infrastructure in computational biology.
-- The CWL standard is supported by a non-profit, the Software Freedom Conservancy ([https://sfconservancy.org/projects/current/](https://sfconservancy.org/projects/current/)), the same people that are supporting git and other projects)
+- The CWL standard is supported by a non-profit, the Software Freedom Conservancy ([https://sfconservancy.org/projects/current/](https://sfconservancy.org/projects/current/)), the same people that are supporting git and other projects.
 
 :::
 
@@ -68,50 +68,50 @@ The rest of this guide takes you through the step-by-step process to create the 
 
 ```
 {
-    "class": "Tool",
-    "name": "equibind",
-    "description": "Docking of small molecules to a protein",
-		"doi": "https://doi.org/10.48550/arXiv.2202.05146",
-    "inputs": {
-      "protein": {
-        "type": "File",
-				"glob": ["*.pdb"]
-      },
-      "small_molecule": {
-        "type": "File",
-				"glob": ["*.sdf"],
-      }
+  "class": "Tool",
+  "name": "equibind",
+  "description": "Docking of small molecules to a protein",
+  "doi": "https://doi.org/10.48550/arXiv.2202.05146",
+  "baseCommand": ["/bin/bash", "-c"],
+  "arguments": [
+    "python main.py --protein $(inputs.protein.filepath) --small_molecule_library $(inputs.small_molecule.filepath);",
+    "mv /outputs/ligands_predicted.sdf /outputs/$(inputs.protein.basename)_$(inputs.small_molecule.basename)_docked.$(inputs.small_molecule.ext);", 
+    "cp /inputs/$(inputs.protein.filepath) /outputs/"
+  ],
+  "dockerPull": "ghcr.io/labdao/equibind@sha256:ae2cec63b3924774727ed1c6c8af95cf4aaea2d3f0c5acbec56478505ccb2b07",
+  "gpuBool": false,
+  "networkBool": false,
+  "inputs": {
+    "protein": {
+      "type": "File",
+      "glob": ["*.pdb"]
     },
-	  "outputs": {
-		   "docked_small_molecule": {
-		        "type": "File", 
-		        "glob": ["*_docked.sdf"],
-				"protein": {
-						"type": "File", 
-						"glob": ["*.pdb"]
-        }
-		  },
-    "baseCommand": ["/bin/bash", "-c"],
-    "arguments": [
-      "python main.py --protein $(inputs.protein.path) --small_molecule_library $(inputs.small_molecule.path);",
-      "mv /outputs/ligands_predicted.sdf /outputs/$(inputs.protein.nameroot)_$(inputs.small_molecule.nameroot)_docked.$(inputs.small_molecule.nameext);", 
-      "cp /inputs/$(inputs.protein.path) /outputs/"
-    ],
-    "dockerPull": "ghcr.io/labdao/equibind@sha256:ae2cec63b3924774727ed1c6c8af95cf4aaea2d3f0c5acbec56478505ccb2b07",
-	  "gpuBool": false,
-	  "networkBool": false,
+    "small_molecule": {
+      "type": "File",
+      "glob": ["*.sdf"],
+    }
+  },
+  "outputs": {
+    "docked_small_molecule": {
+      "type": "File",
+      "glob": ["*_docked.sdf"],
+    }
+    "protein": {
+      "type": "File",
+      "glob": ["*.pdb"]
+    }
   }
 }
 ```
 
-# Step 1: Gather important information about the tool
+## Step 1: Gather important information about the tool
 
 First, identify the tool you want to wrap. The key metadata you need are:
 
 - The tool name (e.g. “equibind”) - please note that tool names should be **lowercase** and have **no spaces**.
-- A short description of the tool’s function (e.g. “Docking of small molecules to a protein”)
+- A short description of the tool’s function (e.g. “Docking of small molecules to a protein”).
 - The DOI of the original manuscript, where the tool’s creators introduce the tool (e.g. [https://doi.org/10.48550/arXiv.2202.05146](https://doi.org/10.48550/arXiv.2202.05146)). We prefer links to non-paywalled manuscripts (i.e. an open access article, or a preprint).
-- The link to the original Github repository for the tool (e.g. [https://github.com/HannesStark/EquiBind](https://github.com/HannesStark/EquiBind))
+- The link to the original Github repository for the tool (e.g. [https://github.com/HannesStark/EquiBind](https://github.com/HannesStark/EquiBind)).
 
 Note: Open an issue in our github if you’re not sure about these details.
 
@@ -119,14 +119,16 @@ Note: Open an issue in our github if you’re not sure about these details.
 
 Use this information for the first part of the config file. For example:
 
+```
 "class": "Tool",
-    "name": "equibind",
-    "description": "Docking of small molecules to a protein",
-		"doi": "https://doi.org/10.48550/arXiv.2202.05146",
+"name": "equibind",
+"description": "Docking of small molecules to a protein",
+"doi": "https://doi.org/10.48550/arXiv.2202.05146",
+```
 
 The link to the Github repository is used to find information to fill out the rest of the config file.
 
-# Step 2: Define inputs and outputs
+## Step 2: Define inputs and outputs
 
 **How does PLEX structure inputs and outputs?**
 
@@ -136,8 +138,8 @@ The link to the Github repository is used to find information to fill out the re
 
 | Tool      | What it does | Inputs | Outputs |
 | ----------- | ----------- | ----------- | ----------- |
-| Equibind      | Predicts how a protein and small molecule will bind together       | Protein structure (.pdb); Small molecule structure (.sdf)      | Protein structure (.pdb); Small molecule pose (.sdf)   |
-| Colabfold   | Folds a protein sequence into a 3D structure        | Protein sequence (.fasta)       | 3D protein structure (.pdb)       |
+| Equibind | Predicts how a protein and small molecule will bind together | Protein structure (**.pdb**); Small molecule structure (**.sdf**) | Protein structure (**.pdb**); Small molecule pose (**.sdf**)   |
+| Colabfold | Folds a protein sequence into a 3D structure | Protein sequence (**.fasta**) | 3D protein structure (**.pdb**) |
 
 :::note
 
@@ -160,9 +162,9 @@ This property is often referred to as **composability.**
 :::
 
 
-## How to define inputs and outputs for the config file
+# How to define inputs and outputs for the config file
 
-1. **Understand what the config file needs.**
+1. **Understand what the config file looks for**
     
     In the config file, each input (and each output) will have a “type” and a “glob”:
     
@@ -176,24 +178,25 @@ This property is often referred to as **composability.**
     For example, for Equibind, the inputs and outputs look like this:
     ```
     "inputs": {
-          "protein": {
-            "type": "File",
-    				"glob": ["*.pdb"]
-          },
-          "small_molecule": {
-            "type": "File",
-    				"glob": ["*.sdf", "*.mol"],
-          }
+      "protein": {
+        "type": "File",
+        "glob": ["*.pdb"]
       },
-    	  "outputs": {
-    		   "docked_small_molecule": {
-    		        "type": "File", 
-    		        "glob": "*_docked.sdf",
-    				"protein": {
-    						"type": "File", 
-    						"glob": ["*.pdb"]
-            }
-    		  },
+      "small_molecule": {
+        "type": "File",
+        "glob": ["*.sdf"],
+      }
+    },
+    "outputs": {
+      "docked_small_molecule": {
+        "type": "File", 
+        "glob": ["*_docked.sdf"],
+      },
+      "protein": {
+        "type": "File", 
+        "glob": ["*.pdb"]
+      }
+    },
     ```
 2. **For a particular tool, find the inputs/outputs and their file types:** These should be found in the tool’s readme.
     
@@ -205,9 +208,12 @@ Note that many tools create multiple outputs. You don’t need to specify every 
     - Where possible, for key inputs/outputs like protein sequences, **try to include the file formats specified in the table below.** Using the same file formats helps make the tools interoperable.
     - If you want to include multiple file formats for the same input or output, you can do this by passing an array of glob patterns. For example:
         
+        ```
         "small_molecule": {
-                "type": "File",
-        				"glob": ["*.sdf", "*.mol"],
+          "type": "File",
+          "glob": ["*.sdf", "*.mol2"],
+        },
+        ```
         
     - When choosing file formats, consider the most simple activity of your tool:
         - For example, for Equibind, the most simple activity is to dock **one** small molecule against **one** protein. The inputs are therefore .sdf and .pdb. (A more complex use of Equibind is to dock 100 small molecules (as an array) against a protein. However, you don’t need to define the inputs as an array, because PLEX automatically handles the scaling of your tool for multiple inputs/outputs.)
@@ -218,15 +224,15 @@ Common file formats for protein engineering
 
 | Input/output | Type | glob (preferred file format for PLEX) | Comment |
 | --- | --- | --- | --- |
-| Protein | “File” | "*.pdb” | 3D protein structure. |
-| Small molecule | “File” | “*.sdf”, ”.mol” | 3D small molecule structures. We generally recommend using .sdf files. |
-| Small molecule SMILES | “File” | “*.smi” | SMILES (Simplified Molecular Input Line Entry Specification) describes the structure of molecules using short ASCII strings. |
-| Peptide sequence (e.g. amino acid chains such as proteins) | “File” | “*.fasta” | Common format for sequencing data. |
-| Nucleotide sequence (e.g. DNA, RNA) | “File” | “*.fasta” | As above. |
-| Sequencing raw data | “File” | “*.fastq” | FASTQ is an extension of FASTA. It stores the biological sequence and the corresponding quality scores. Often this data comes from 2nd generation sequencing machines from Illumina. |
-| Nanopore sequencing raw data | “File” | “*.fast5” | The standard sequencing output for Oxford Nanopore sequencers such as the MinION. Based on the HDF5 standard. Unlike .fasta and .fastq, .fast5 is binary. |
+| Protein | “File” | ["*.pdb"] | 3D protein structure. |
+| Small molecule | “File” | ["*.sdf"] *or* ["\*.sdf", "*.mol2"] | 3D small molecule structures. We generally recommend using .sdf files. |
+| Small molecule SMILES | “File” | ["*.smi"] | SMILES (Simplified Molecular Input Line Entry Specification) describes the structure of molecules using short ASCII strings. |
+| Peptide sequence (e.g. amino acid chains such as proteins) | “File” | ["*.fasta"] | Common format for sequencing data. |
+| Nucleotide sequence (e.g. DNA, RNA) | “File” | ["*.fasta"] | As above. |
+| Sequencing raw data | “File” | ["*.fastq"] | FASTQ is an extension of FASTA. It stores the biological sequence and the corresponding quality scores. Often this data comes from 2nd generation sequencing machines from Illumina. |
+| Nanopore sequencing raw data | “File” | ["*.fast5"] | The standard sequencing output for Oxford Nanopore sequencers such as the MinION. Based on the HDF5 standard. Unlike .fasta and .fastq, .fast5 is binary. |
 
-# Step 3: Specify arguments
+## Step 3: Specify arguments
 
 The arguments are the code you would type into the terminal if you were running the tool when installed on your machine.
 
@@ -234,15 +240,16 @@ We will go through 3 examples to show how to specify arguments. First, let’s d
 
 When defining arguments for PLEX keep the following in mind: 
 
-- **PLEX expects two directories: an /inputs directory and an /outputs directory.** Note that these are the plural: inputS and outputS, NOT input and output.
+- **PLEX expects two directories: an /inputs directory and an /outputs directory.** Note that these are the plural: inputs and outputs, **NOT** input and output.
 - **File paths for input data have a specific format:** It uses the ```$(inputs)``` JSON notation. For example, the input protein file path is represented with ```$(inputs.protein.filepath)```.
 - **We currently only support tools that are run from the command line**: Therefore, the “baseCommand” has to be ```["/bin/bash", "-c"]```.  Running python directly is coming soon.
 
 :::info
-Doing the arguments is probably the hardest part! If you're stuck, [send us an email](stewards@labdao.com) and we'll be happy to puzzle it out with you.
+Doing the arguments is probably the hardest part! If you're stuck, [send us an email](mailto:stewards@labdao.com) and we'll be happy to puzzle it out with you.
 :::
 
-## Overall argument structure
+**Overall argument structure**
+
 The overall argument structure will usually be as follows:
 
 Line 0: Prepare inputs [some tools only]
@@ -253,7 +260,7 @@ Line 2: Embedding/weights [some tools only]
 
 Line 3: Run inference command [some tools only]
 
-Line 4: mv [Optional. Include if you want to rename output files to make them self-explanatory]
+Line 4. Move and/or rename results output folder using `mv` [*optional*]
 
 :::tip
 
@@ -261,81 +268,77 @@ Line 4: mv [Optional. Include if you want to rename output files to make them se
 
 - It’s usually easiest to use arguments in the same order as recommended in the documentation.
 - Assess the formatting of the output filenames. If you think the filenames are not self explanatory, you can choose to rename them. For example:
-    - Equibind (link to equibind config in the repo): As standard, all docked poses are called “docked_ligand.sdf”. We have chosen to rename these to capture the name of the input protein and small molecule (e.g. 6d08_protein_processed_6d08_ligand_docked.sdf)
-    - Diffdock (link to diffdock config in the repo): The names are self-explanatory, so no renaming is required.
+    - Equibind [config file](https://github.com/labdao/plex/blob/main/tools/equibind.json): As standard, all docked poses are called “docked_ligand.sdf”. We have chosen to rename these to capture the name of the input protein and small molecule (e.g. 6d08_protein_processed_6d08_ligand_docked.sdf)
+    - Diffdock [config file](https://github.com/labdao/plex/blob/main/tools/diffdock.json): The names are self-explanatory, so no renaming is required.
 
 Get the tool running from your command line first. This is the easiest way to make sure the arguments work.
 
 :::
 
-## Worked examples for defining arguments
+# Worked examples for defining arguments
 
 Below, we share sections from the original Github README for 2 tools, and then show what the PLEX arguments look like.
 
-### Gnina
+# Gnina
 
 The Gnina [readme](https://github.com/gnina/gnina) contains the key arguments we need.
 
 It says:
 
----
-To dock ligand `lig.sdf` to a binding site on `rec.pdb` defined by another ligand `orig.sdf`:
+>
+>To dock ligand `lig.sdf` to a binding site on `rec.pdb` defined by another ligand `orig.sdf`:
+>
+>`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf -o docked.sdf.gz`
+>
+>To perform docking with flexible sidechain residues within 3.5 Angstroms of `orig.sdf` (generally not recommend unless prior knowledge indicates pocket is highly flexible):
+>
+>`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf --flexdist_ligand orig.sdf --flexdist 3.5 -o flex_docked.sdf.gz`
+>
+>To perform whole protein docking:
+>
+>```
+>gnina -r rec.pdb -l lig.sdf --autobox_ligand rec.pdb -o whole_docked.sdf.gz --exhaustiveness 64
+>```
 
-`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf -o docked.sdf.gz`
-
-To perform docking with flexible sidechain residues within 3.5 Angstroms of `orig.sdf` (generally not recommend unless prior knowledge indicates pocket is highly flexible):
-
-`gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf --flexdist_ligand orig.sdf --flexdist 3.5 -o flex_docked.sdf.gz`
-
-To perform whole protein docking:
-
-```
-gnina -r rec.pdb -l lig.sdf --autobox_ligand rec.pdb -o whole_docked.sdf.gz --exhaustiveness 64
-```
-
----
-This becomes the following PLEX argument for whole protein docking:
+This becomes the below PLEX argument for whole protein docking:
 
 ```
 "baseCommand": ["/bin/bash", "-c"],
-    "arguments": [
-      "gnina -r $(inputs.protein.path) -l $(inputs.small_molecule.path) --exhaustiveness $(inputs.exhaustiveness) --autobox_ligand $(inputs.protein.path) --cnn_scoring $(inputs.cnn_scoring) -o /outputs/$(inputs.protein.nameroot)_$(inputs.small_molecule.nameroot)_docked_scored.sdf",
-    ]
+"arguments": [
+  "gnina -r $(inputs.protein.filepath) -l $(inputs.small_molecule.filepath) --exhaustiveness $(inputs.exhaustiveness) --autobox_ligand $(inputs.protein.filepath) --cnn_scoring $(inputs.cnn_scoring) -o /outputs/$(inputs.protein.basename)_$(inputs.small_molecule.basename)_docked_scored.sdf",
+],
 ```
 
-### Diffdock
+# Diffdock
 
 The Diffdock [readme](https://github.com/gcorso/DiffDock) contains the information we need.
 
 It says:
 
----
-For a single complex: specify the protein with, e.g., `--protein_path protein.pdb`
-and the ligand with `--ligand ligand.sdf`
-or `--ligand "COc(cc1)ccc1C#N"`
- 
 
-We will soon also provide weights of a trained model without ESM2 embeddings such that this step is not necessary. Luckily, it is rather easy. First prepare a fasta for ESM2 (for a single protein use `--protein_path protein.pdb` instead):
- 
+>For a single complex: specify the protein with, e.g., `--protein_path protein.pdb`
+>and the ligand with `--ligand ligand.sdf`
+>or `--ligand "COc(cc1)ccc1C#N"`
+>
+>We will soon also provide weights of a trained model without ESM2 embeddings such that this step is not necessary. Luckily, it is rather easy. First prepare a fasta for ESM2 (for a single protein use `--protein_path protein.pdb` instead):
+>
+>`python datasets/esm_embedding_preparation.py --protein_ligand_csv data/protein_ligand_example_csv.csv --out_file data/prepared_for_esm.fasta`
+>
+>Generate the embeddings with ESM2 (assuming that you are in the DiffDock directory):
+>
+>`git clone https://github.com/facebookresearch/esm
+>cd esm
+>pip install -e .
+>cd ..
+>HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D data/prepared_for_esm.fasta data/esm2_output --repr_layers 33 --include per_tok`
+>
+>And done, that is it!
+>
+>Run inference
+>
+>`python -m inference --protein_ligand_csv data/protein_ligand_example_csv.csv --out_dir results/user_predictions_small --inference_steps 15 >--samples_per_complex 10 --batch_size 10 --actual_steps 18 --no_final_step_noise`
 
-`python datasets/esm_embedding_preparation.py --protein_ligand_csv data/protein_ligand_example_csv.csv --out_file data/prepared_for_esm.fasta`
 
-Generate the embeddings with ESM2 (assuming that you are in the DiffDock directory):
- 
-
-`git clone https://github.com/facebookresearch/esm
-cd esm
-pip install -e .
-cd ..
-HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D data/prepared_for_esm.fasta data/esm2_output --repr_layers 33 --include per_tok`
-
-And done, that is it!
-
-Run inference
-
-`python -m inference --protein_ligand_csv data/protein_ligand_example_csv.csv --out_dir results/user_predictions_small --inference_steps 15 --samples_per_complex 10 --batch_size 10 --actual_steps 18 --no_final_step_noise`
-
----
 Note that the standard baseCommand makes it clear that the arguments are generic bash commands.
 
 To convert this into PLEX arguments, we look through the readme and see the different steps. We convert these into 4 lines of code that do the following:
@@ -349,20 +352,20 @@ The PLEX arguments are therefore as follows:
 
 ```
 "baseCommand": ["/bin/bash", "-c"],
-    "arguments": [
-      "python datasets/esm_embedding_preparation.py --protein_path $(inputs.protein.filepath) --out_file /outputs/prepared_for_esm.fasta;",
-      "HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D /outputs/prepared_for_esm.fasta /outputs/esm2_output --repr_layers $(inputs.repr_layers.default) --include per_tok && cp -r /outputs/esm2_output data/esm2_output;",
-      "python -m inference --protein_path $(inputs.protein.filepath) --ligand $(inputs.small_molecule.filepath) --out_dir /outputs --inference_steps $(inputs.inference_steps.default) --samples_per_complex $(inputs.samples_per_complex.default) --batch_size $(inputs.batch_size.default) --actual_steps $(inputs.actual_steps.default) --no_final_step_noise;",
-      "cp $(inputs.protein.filepath) /outputs"
-    ]
+"arguments": [
+  "python datasets/esm_embedding_preparation.py --protein_path $(inputs.protein.filepath) --out_file /outputs/prepared_for_esm.fasta;",
+  "HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D /outputs/prepared_for_esm.fasta /outputs/esm2_output --repr_layers $(inputs.repr_layers.default) --include per_tok && cp -r /outputs/esm2_output data/esm2_output;",
+  "python -m inference --protein_path $(inputs.protein.filepath) --ligand $(inputs.small_molecule.filepath) --out_dir /outputs --inference_steps $(inputs.inference_steps.default) --samples_per_complex $(inputs.samples_per_complex.default) --batch_size $(inputs.batch_size.default) --actual_steps $(inputs.actual_steps.default) --no_final_step_noise;",
+  "cp $(inputs.protein.filepath) /outputs"
+]
 ```
-If you're stuck, [send us an email](stewards@labdao.com) and we'll be happy to help puzzle it out with you.
+If you're stuck, [send us an email](mailto:stewards@labdao.com) and we'll be happy to help puzzle it out with you.
 
-# Step 4: Specify container
+## Step 4: Specify container
 
 :::note
 
-For this guide, we assume that you already have access to a containerized version of the tool. If you want to make your own container, we’ll be adding a guide soon. In the meantime, [send us an email](stewards@labdao.com).
+For this guide, we assume that you already have access to a containerized version of the tool. If you want to make your own container, we’ll be adding a guide soon. In the meantime, [send us an email](mailto:stewards@labdao.com).
 
 :::
 
@@ -385,7 +388,7 @@ The URL is found by looking at the container, and clicking “Digest" (example: 
 
 The digest will look something like this:
 
-sha256:931809f6cc0ac3c43f9d09ddef0a7a03d0085e58a4aa50cf79c24fb708d58bae
+`sha256:931809f6cc0ac3c43f9d09ddef0a7a03d0085e58a4aa50cf79c24fb708d58bae`
 
 You can now construct the docker reference to follow the pattern ````author/tool@sha256:````
 For example:
@@ -412,8 +415,8 @@ The final step before doing a pull request is to specify what requirements the t
     Notes on GPU usage:
     
     - We generally recommend that you follow the authors’ guidance on whether to use GPUs or not.
-    - While some tools (such as Diffdock) can be run on a CPU, they will be very slow. If a tool offers GPU as an option, when in doubt specify “true”.
-    - If you are finding it difficult getting your tool to work on a GPU yourself, try running it on a CPU. If this works well, then specify “false”.
+    - While some tools (such as Diffdock) can be run on a CPU, they will be very slow. If a tool offers GPU as an option, when in doubt specify `true`.
+    - If you are finding it difficult getting your tool to work on a GPU yourself, try running it on a CPU. If this works well, then specify `false`.
 2. **Does your tool require access to the web (networking)?** I.e. to download files 
     
     This is shown with the config line: `“networkBool”:` with options `true` or `false`
@@ -424,18 +427,16 @@ When you have assessed these requirements, add them to the config.
 Below is an example for Colabfold, which requires a GPU and web access to run queries against the MMSeq2 database:
 
 ```
-...
 "gpuBool": true,
 "networkBool": true,
-...
 ```
 
-# Step 6: Submit your tool config to PLEX via a Pull Request
+## Step 6: Submit your tool config to PLEX via a Pull Request
 
 To submit your tool to PLEX, you will create a config file and submit it via a pull request. Here are the steps:
 
 1. Go to [https://github.com/labdao/plex/tree/main/tools](https://github.com/labdao/plex/tree/main/tools)
-2. Click “add file”, then “create new file”.
+2. Click “Add file”, then “Create new file”.
 ![addplex1](add-tool-to-PLEX-1.png)
 3. Create a json file for the config, by editing the filename. Name it after the tool (all lowercase, no spaces) e.g. "mytool.json".
 ![addplex2](add-tool-to-PLEX-2.png)
@@ -452,7 +453,7 @@ To submit your tool to PLEX, you will create a config file and submit it via a p
 
 **How did you get on with this guide?** 
 
-We’d love to hear from you. Drop us an email at [stewards@labdao.com](stewards@labdao.com).
+We’d love to hear from you. Drop us an email at [stewards@labdao.com](mailto:stewards@labdao.com).
 
 In particular, let us know:
 
