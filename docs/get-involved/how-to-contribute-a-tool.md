@@ -143,7 +143,7 @@ The link to the Github repository is used to find information to fill out the re
 
 :::note
 
-We are working to expand typing of biological file formats in the future with custom validators. If you want to contribute, please [send us an email](steward@labdao.com).
+We are working to expand typing of biological file formats in the future with custom validators. If you want to contribute, please [send us an email](mailto:stewards@labdao.com).
 
 :::
 
