@@ -3,7 +3,11 @@ title: How to contribute a tool
 sidebar_position: 2
 ---
 
-This tutorial will guide you through the steps required to contribute a tool to PLEX.
+**We're on a mission to increase the number of tools available on PLEX, and we need your help.**
+
+PLEX is an open source scientific project. Together, we can build state-of-the-art tooling for computational biology. PLEX is by scientists, for scientists.
+
+Got a tool you'd like to see on PLEX? This tutorial will guide you through the steps required to contribute it to the ecosystem.
 
 **Who is this for?**
 
@@ -19,13 +23,13 @@ By contributing a tool to PLEX, you’ll be part of an open-source community of 
 
 **Requirements:**
 
-- You have access to a Docker container of the tool you want to contribute (if you have the raw tool that you want to wrap in a container, [send us an email](stewards@labdao.com)).
+- Aaccess to a Docker container of the tool you want to contribute (if you have the raw tool that you want to wrap in a container, [send us an email](stewards@labdao.com)).
 - Comfortable with Docker and Docker files
 - Experience using Conda
 - Basic understanding of working with Pytorch and Cuda as dependencies
 - RECOMMENDATION: Make sure you’ve managed to get the tool running from the command line on your own machine first, then do the PLEX config.
     - This familiarity will make it easier to structure the set-up on PLEX.
-    - Please [send us an email](stewards@labdao.com) if you do not have access to a GPU and want to contribute a tool.
+    - If you want to contribute a tool but don't have access to a GPU, please [send us an email](stewards@labdao.com) and we can help.
 
 **Time required:**
 
@@ -58,7 +62,7 @@ You will see that the config file contains:
 2. Definitions of the inputs and outputs, include file types. 
 3. The arguments required to run the tool
 4. The docker container that encapsulates the tool
-5. Whether the tool has additional requirements, such as a GPU
+5. Whether the tool has additional requirements, such as a GPU and internet access
 
 The rest of this guide takes you through the step-by-step process to create the config file and contribute a tool.
 
@@ -109,13 +113,13 @@ First, identify the tool you want to wrap. The key metadata you need are:
 - The DOI of the original manuscript, where the tool’s creators introduce the tool (e.g. [https://doi.org/10.48550/arXiv.2202.05146](https://doi.org/10.48550/arXiv.2202.05146)). We prefer links to non-paywalled manuscripts (i.e. an open access article, or a preprint).
 - The link to the original Github repository for the tool (e.g. [https://github.com/HannesStark/EquiBind](https://github.com/HannesStark/EquiBind))
 
-Note: Open an issue with details if you’re not sure about these details.
+Note: Open an issue in our github if you’re not sure about these details.
 
 **Turning this into the config:**
 
-Use this information for the first part of the config file:
+Use this information for the first part of the config file. For example:
 
-"class": "Tool", 
+"class": "Tool",
     "name": "equibind",
     "description": "Docking of small molecules to a protein",
 		"doi": "https://doi.org/10.48550/arXiv.2202.05146",
@@ -149,7 +153,7 @@ We are working to expand typing of biological file formats in the future with cu
 
 The mission of PLEX is to make tools more accessible and reusable. At the moment, it can be hard to combine tools into chains of tools (for example: to take the output of Colabfold, and use it as the input of Equibind).
 
-What we need are **standards** for tool configs, so that tools can be easily combined together. This is why, within PLEX, every tool needs “sticky ends” i.e. defined inputs and outputs. This allows others to combine tools into new chains for their projects, like lego blocks.
+What we need are **standards** for tool configs, so that tools can be easily combined together. This is why, within PLEX, every tool needs “sticky ends” i.e. defined inputs and outputs that match. This allows others to combine tools into new chains for their projects, like lego blocks.
 
 This property is often referred to as **composability.**
 
@@ -193,10 +197,12 @@ This property is often referred to as **composability.**
     ```
 2. **For a particular tool, find the inputs/outputs and their file types:** These should be found in the tool’s readme.
     
-    Note that many tools create multiple outputs. You don’t need to specify every output the tool generates - just the files that you want other tools to be able to work with easily.
-    
+:::tip
+Note that many tools create multiple outputs. You don’t need to specify every output the tool generates - just the files that you want other tools to be able to work with easily.
+:::
+
 3. **Decide which file formats to include:** Many tools will take several different file formats.
-    - Where possible, for important inputs/outputs (e.g. protein sequences), **try to include the file formats specified in the table below.** Using the same file formats helps make the tools interoperable.
+    - Where possible, for key inputs/outputs like protein sequences, **try to include the file formats specified in the table below.** Using the same file formats helps make the tools interoperable.
     - If you want to include multiple file formats for the same input or output, you can do this by passing an array of glob patterns. For example:
         
         "small_molecule": {
@@ -232,12 +238,16 @@ When defining arguments for PLEX keep the following in mind:
 - **File paths for input data have a specific format:** It uses the ```$(inputs)``` JSON notation. For example, the input protein file path is represented with ```$(inputs.protein.filepath)```.
 - **We currently only support tools that are run from the command line**: Therefore, the “baseCommand” has to be ```["/bin/bash", "-c"]```.  Running python directly is coming soon.
 
+:::info
+Doing the arguments is probably the hardest part! If you're stuck, [send us an email](stewards@labdao.com) and we'll be happy to puzzle it out with you.
+:::
+
 ## Overall argument structure
 The overall argument structure will usually be as follows:
 
 Line 0: Prepare inputs [some tools only]
 
-**Line 1: Inputs and outputs [Required]**
+**Line 1: Inputs and outputs [required]**
 
 Line 2: Embedding/weights [some tools only]
 
@@ -254,6 +264,8 @@ Line 4: mv [Optional. Include if you want to rename output files to make them se
     - Equibind (link to equibind config in the repo): As standard, all docked poses are called “docked_ligand.sdf”. We have chosen to rename these to capture the name of the input protein and small molecule (e.g. 6d08_protein_processed_6d08_ligand_docked.sdf)
     - Diffdock (link to diffdock config in the repo): The names are self-explanatory, so no renaming is required.
 
+Get the tool running from your command line first. This is the easiest way to make sure the arguments work.
+
 :::
 
 ## Worked examples for defining arguments
@@ -266,6 +278,7 @@ The Gnina [readme](https://github.com/gnina/gnina) contains the key arguments we
 
 It says:
 
+---
 To dock ligand `lig.sdf` to a binding site on `rec.pdb` defined by another ligand `orig.sdf`:
 
 `gnina -r rec.pdb -l lig.sdf --autobox_ligand orig.sdf -o docked.sdf.gz`
@@ -280,6 +293,7 @@ To perform whole protein docking:
 gnina -r rec.pdb -l lig.sdf --autobox_ligand rec.pdb -o whole_docked.sdf.gz --exhaustiveness 64
 ```
 
+---
 This becomes the following PLEX argument for whole protein docking:
 
 ```
@@ -292,8 +306,10 @@ This becomes the following PLEX argument for whole protein docking:
 ### Diffdock
 
 The Diffdock [readme](https://github.com/gcorso/DiffDock) contains the information we need.
+
 It says:
 
+---
 For a single complex: specify the protein with, e.g., `--protein_path protein.pdb`
 and the ligand with `--ligand ligand.sdf`
 or `--ligand "COc(cc1)ccc1C#N"`
@@ -316,20 +332,20 @@ HOME=esm/model_weights python esm/scripts/extract.py esm2_t33_650M_UR50D data/pr
 And done, that is it!
 
 Run inference
- 
 
 `python -m inference --protein_ligand_csv data/protein_ligand_example_csv.csv --out_dir results/user_predictions_small --inference_steps 15 --samples_per_complex 10 --batch_size 10 --actual_steps 18 --no_final_step_noise`
 
+---
 Note that the standard baseCommand makes it clear that the arguments are generic bash commands.
 
 To convert this into PLEX arguments, we look through the readme and see the different steps. We convert these into 4 lines of code that do the following:
 
 1. The first line runs the ESM preparation on the input protein. The output here is the protein sequence that is now prepared for a tool called ESM, which is required to run Diffdock itself. 
-2. The second line generates the ESM embeddings of the input protein
+2. The second line generates the ESM embeddings of the input protein.
 3. The third line runs Diffdock itself. Note that we use the input parameters we defined in the previous step to configure where which argument goes.
 4. The fourth line copies the input protein to the /outputs directory to make chaining tools easier in the future - this is not a required step and not mentioned in the readme above.
 
-The PLEX arguments are as follows:
+The PLEX arguments are therefore as follows:
 
 ```
 "baseCommand": ["/bin/bash", "-c"],
@@ -340,11 +356,14 @@ The PLEX arguments are as follows:
       "cp $(inputs.protein.filepath) /outputs"
     ]
 ```
+If you're stuck, [send us an email](stewards@labdao.com) and we'll be happy to help puzzle it out with you.
 
 # Step 4: Specify container
 
 :::note
+
 For this guide, we assume that you already have access to a containerized version of the tool. If you want to make your own container, we’ll be adding a guide soon. In the meantime, [send us an email](stewards@labdao.com).
+
 :::
 
 First, locate your container URL. We recommend containers stored on DockerHub.
@@ -378,6 +397,7 @@ For example:
 :::warning
 
 We recommend to not use tags, such as ``latest`` when specifying a container image. Tags are not stable and a future version of the container you referenced might not run exactly the same way you (and others) expect.
+
 :::
 
 
@@ -416,10 +436,15 @@ To submit your tool to PLEX, you will create a config file and submit it via a p
 
 1. Go to [https://github.com/labdao/plex/tree/main/tools](https://github.com/labdao/plex/tree/main/tools)
 2. Click “add file”, then “create new file”.
+![addplex1](add-tool-to-PLEX-1.png)
 3. Create a json file for the config, by editing the filename. Name it after the tool (all lowercase, no spaces) e.g. "mytool.json".
+![addplex2](add-tool-to-PLEX-2.png)
 4. Write the config code in the file body.
-5. Carefully check the config code. If you are happy with it, scroll down and click “Create a new branch for this commit and start a pull request”. Give the branch a self-explanatory name e.g. “adding my-favourite-tool to PLEX”. Then, click “Propose new file”.
-6. Open a pull request. Give the pull request a self-explanatory name such as “add my-favourite-tool to PLEX”. Then, click “Create pull request”.
+![addplex3](add-tool-to-PLEX-3.png)
+5. Carefully check the config code. If you are happy with it, scroll down and click “Create a new branch for this commit and start a pull request”. Give the branch a self-explanatory name e.g. “adding-mytool-to-PLEX”. Then, click “Propose new file”.
+![addplex4](add-tool-to-PLEX-4.png)
+6. Open a pull request. Give the pull request a self-explanatory name such as “add mytool to PLEX”. Then, click “Create pull request”.
+![addplex5](add-tool-to-PLEX-5.png)
 7. Wait for checks to complete. You’re done! We’ll now review the pull request and test it.
     
 
@@ -427,7 +452,7 @@ To submit your tool to PLEX, you will create a config file and submit it via a p
 
 **How did you get on with this guide?** 
 
-We’d love to hear from you. Drop us an email at stewards@labdao.com.
+We’d love to hear from you. Drop us an email at [stewards@labdao.com](stewards@labdao.com).
 
 In particular, let us know:
 
